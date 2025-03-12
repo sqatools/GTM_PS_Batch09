@@ -33,6 +33,37 @@
 13.  Go to local system in your repository folder and add one file with your branch name
      e.g. deepesh_branch_file.txt
 
+14. run command to check status
+    ->  git status
+    # new file will show in red color
+
+15. run command to add file
+    ->  git add filepath (single file)
+    or
+    ->  git add . # (to add all the modified files)
+
+
+16.  initiate the commit operation
+    ->  git commit -m "adding new file"
+
+17.  push code to the server
+    ->  git push
+
+18.  Go to git server and check your changes in 
+     specific branch, all the content should be in
+     a branch not in main branch.
+
+19.  There will be create pull request button visible 
+     on git server, then on button and initiate pull
+     request.
+
+18.  Provide description of your request, add reviewers in the pull 
+    ->  click on request pull create button
+
+19.  Reviewers will receive mail to review the code.
+
+20. All the pull request will show under pull request tab.
+
 
 
 
