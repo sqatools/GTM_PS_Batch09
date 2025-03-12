@@ -1,0 +1,38 @@
+# Multi branching guide
+
+1. click on branch dropdown
+2. click on view all branches
+3. only main branch should be visible
+4. click on create branch button
+5. Provide new branch name, 
+   use your name as prefix
+   e.g. ganesh_branch
+6. Branch should be created successfully.
+7. copy you branch name as save it notepad
+   deepesh_branch
+8. Go to local system and open the terminal in
+   repository folder
+
+9. pull the repo code with below command
+   -> git pull 
+   # all the branches and latest changes by
+     others will be visible on terminal UI.
+
+10. check the current branch with command
+   ->  git branch
+    # it will show main as current branch in green color
+
+11.  Switch to newly created branch with below command
+    -> git checkout branch_name
+
+12. check current active branch again
+   ->  git branch
+    # new branch should show in green color as
+     activated branch.
+
+13.  Go to local system in your repository folder and add one file with your branch name
+     e.g. deepesh_branch_file.txt
+
+
+
+
