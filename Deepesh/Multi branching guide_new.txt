@@ -64,6 +64,29 @@
 
 20. All the pull request will show under pull request tab.
 
+21. Reviewer has to review the pull request and provide approval
+    -> Open pull request
+    ->  click on files section
+    ->  click on review changes button.
+    ->  then provide review comment 
+    ->  select Approve radio button.
+    ->  click on submit review button.
+
+22. PR owner has to merge to the pull to main branch
+    -> Once got approval from reviewer.
+    -> Open pull request
+    -> go to conversion tab.
+    -> scroll till end.
+    ->  click on Merge pull request button.
+
+23.  All the changes from feature branch will merge to main branch
+24.  Open you repo folder and check all changes from feature branch
+     should be available in your folder in main branch.
+
+
+
+
+
 
 
 
