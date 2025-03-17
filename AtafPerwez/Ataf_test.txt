@@ -3,4 +3,6 @@ This is my first repo file in my folder
 Adding content from Pycharm
 updating again.
 
-adding more line
+adding more line 2
+
+adding line 3
