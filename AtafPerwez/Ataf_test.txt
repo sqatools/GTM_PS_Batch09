@@ -1,1 +1,3 @@
 This is my first repo file in my folder
+
+Adding content from Pycharm
