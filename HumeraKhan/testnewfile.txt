@@ -1,2 +1,7 @@
 Adding a new file inside my folder
 
+Hello today's monday & I'm setting up the python
+
+line 2
+line 3
+
