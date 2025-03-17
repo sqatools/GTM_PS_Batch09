@@ -1,1 +1,2 @@
 Adding first file to Repo
+adding content from pycharm with Git
