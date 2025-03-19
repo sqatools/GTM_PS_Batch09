@@ -17,3 +17,9 @@ print("value X",x,id(x))
 print("value y",y,id(y))
 print("value z",z,id(z))
 ################################
+a d c =50 # invalid no space
+1_var =60 # invalid
+abc_xyz_hello_python # valid names
+#4. cannot contain special characters
+var_1$ = 700 # invalid
+
