@@ -81,9 +81,41 @@ print("nAME :",nAME)
 print("name :", name)
 print("name :", naME)
 
+###################################
+# My practice #
+################################
+print('---------------------------------------------')
+print("Below are the code practiced by me")
+print('=============================================')
 
 
+print('---------------------------------------------')
+# locating the address of the variables
+x = 50
+Y=100
+z = 19.0986645678
+print('address of var x :', x)
+print('address of var y :', y)
+print('address of var z :', z)
+
+print('-----------------------------')
+##########################
+# assigning multiple variable at a time
+
+a, b, c, d = 10, 3.143, 3/2, 'hello'
+# print(a, b, c)
+print('value of a:', a)
+print('value of b:', b)
+print('value of c:', c)
+print('value of d:', d)
+
+print('-----------------------------------')
+#case sensitive variable
+
+Name = "Ataf Perwez"
+AGE = 99
+LocaTioN = "Kolkata"
+course = "Python Automation By Deepesh"
 
 
-
-
+print(Name, AGE, LocaTioN, course )
