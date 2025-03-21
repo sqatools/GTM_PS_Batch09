@@ -1,3 +1,4 @@
+
 a = 20
 # a : variable
 # = : assignment operator
@@ -81,92 +82,58 @@ print("nAME :",nAME)
 print("name :", name)
 print("name :", naME)
 
-"""
-Math operation on variables
-
-+ :  plus operator
-- :  subtraction
-* :  multiplication
-/ and // : division
-== :  equal to operator
-!= : not equal to
-** : power operator
-%  : remainder operator
-"""
-
-print("_"*50)
 ### addition of values ###
-num1 = 40
+num1= 40
 num2 = 50
-num3 = num1 + num2
-print("addition :", num3)
-print("addition2 :", num1+ num2)
+num3 = num1 +num2
+print("addition:", num3)
+print("addition:", num1+num2)
 
-### multiplication of values ##
-var1 = num1*num2
-print("multiplication :", var1)
-
-### subtraction of values###
-print("subtraction :", 500 - num1)
+### multiplication of values ###
+var1 = num1+num2
 
 
-#### division #####
-v1 = 50
-v2 = 3
-
-# when we divide number with single /, then it return the pointer output.
-print("division with single / :", v1/v2) # 16.666666666666668
-
-# When we divide number with double //, then it returns the whole value without pointer
-print("division with double // :", v1//v2) # 16
+### division###
+v1=50
+v2=3
+print ("division with sngle / :", v1/v2)
+# when we divide number with double ///, then it returns the whole value without pointer
+print ("division with double// : v1//v2")
 
 #### get square and cube of given number ####
-n1 = 5
+n1=5
+print("square of value :", n1++2)_# square of value :25
+print ("cube of a number", n1++3)_# cube of value :125
 
-print("square of value :", n1**2) # square of value : 25
-print("cube of value :", n1**3) # cube of value : 125
-
-#### get remainder value ###########
+#### get the remainder value #######
 v2 = 20
 v3 = 3
-print("remainder value :", v2%v3)  # remainder value : 2
+print(" remainder value:", v2%v3) #remainder value :2
 
 #### compare 2 values ####
-p1 = 40
-p2 = 50
-p3 = 40
+p1=40
+p2=50
+p3=40
 
-print(p1 == p2)  # False
-print(p1 == p3)   # True
-print(id(p1) == id(p3)) # True
-print(p1 != p2)  # True
+print(p1==p2) # false
+print(p1==p3) # true
+print (id(p1)==id(p2))
+print (p1!=p2) #true
 
 
-print("_"*50)
-########################
-"""
-1.  (a+b)^2 = a^2 + b^2 + 2ab
-2.  (a-b)^2 = a^2 + b^2 - 2ab
+######################
+1. (a+b)^2 = a^2  b^2 +2ab
 
-"""
-#  (a-b)^2 = a^2 + b^2 - 2ab
-a = 4
-b = 7
-lhs = (a-b)**2
-print("LHS output  :", lhs)
+#########################
+calculate simple interest
+P=20000
+R=8
+T=5
 
-rhs = a**2 + b**2 - 2*a*b
-
-print("RHS output :", rhs)
-
-####################################
-# calculate simple interest
-P = 20000
-r = 8
-t = 5
-A = (P*t*r)/100
+A = (P*T*R) / 100
 # P = principal amount
-# r = rate of interest
-# t = time in a years
+# R = rate of interest
+# T = time of interest
 
-print("Simple interest :", A) # 8000.0
+print ("Simple interest: ", A)_# 8000.0
+
