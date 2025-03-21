@@ -33,3 +33,103 @@ print(id(x)) # latest x value address will print
 # 2 variable should not the numbers ex= 1var
 # 3 variable should not cantain the special characters
 # 4 variable name are case sensitive ex = name, NAME,Name,nAmE,NAme all are same
+
+Name = 'Basavaraja'
+NAME = 'virat'
+nAME = 'Aarvi'
+name = 'Ravi'
+naME = 'Aditya'
+
+print("Name :", Name)
+print("NAME :", NAME)
+print("nAME :", nAME)
+print("name :", name)
+print("name :", naME)
+
+
+
+print("#"*50)
+#Math operation on variables
+"""
++ :  plus operator
+- :  subtraction
+* :  multiplication
+/ and // : division
+== :  equal to operator
+!= : not equal to
+** : power operator
+%  : remainder operator
+"""
+print("#"*50)
+# ADDITION
+a,b=10,20
+c=a+b
+print(c)
+
+a=b=c=10
+print(a+b+c)
+
+# Subctration
+a=20
+b=10
+c=a-b
+print(c)
+
+a,b=30,40
+print(b-a)
+
+# MULTIPLICATION
+
+a,b,c=2,3,5
+c=a*b*c
+print(c)
+
+a=b=c=d=10
+print(a*b*c*d)
+
+# DIVISION
+
+a=10
+b=4
+c=3
+
+print(a/b)
+print(a//c)
+
+x,y,z=75,44,66
+print(x/y)
+print(x//y)
+print(z/y)
+print(z//y)
+
+# equal ==
+a,b=10,10
+print(a==b)
+
+a,b,c=10,10,20
+
+print(a == b != c)
+print(a == b == c)
+print(a != c != b)
+
+# ** power operator
+
+a=10
+b=2
+print(a**2)
+
+print(b**2)
+
+# remainder  operator
+
+a=10
+b=2
+print(10%2)
+print(a%3)
+print(a%4)
+print(a%6)
+print(a%7)
+print(a%9)
+
+
+
