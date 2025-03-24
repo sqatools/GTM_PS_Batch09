@@ -1,22 +1,3 @@
-"""
-Python Data Types :
-
-1.  Numbers
-    i) Integer
-    ii) Float
-    iii) Complex Number
-
-2.  Sequential
-    i)   String
-    ii)  List
-    iii) Tuple
-
-
-3.  Dictionary
-4.  Set
-5.  Boolean
-"""
-
 ############ Integer #################
 """
 # properties of integer
@@ -26,6 +7,17 @@ Python Data Types :
 ->  There is no limit to defined data in int variable
 
 """
+int1 = 100
+int2 = 120
+int3 = 40
+int4 = int1 + int2 + int3
+print(int4, type(int2))
 
-a=10
-print(a,type(a))
+############################################
+# Sting datatype
+name = "varinder"
+Add = "123 you got it"
+phone = "703-450-6043"
+
+print("this is my name : " ,name, type(name))
+
