@@ -1,5 +1,9 @@
 #Adding integer values
 import math
+
+from numba.cuda.printimpl import real_print_impl
+from pyasn1.codec.ber.decoder import PrintableStringDecoder
+
 a=5
 b=5
 c=a+b
@@ -157,6 +161,53 @@ r=4
 h=5
 f=(2*pi*r*h)+(2*pi*r*r)
 print(f)
+###################Data Types############
+
+a=6
+print(a, type(a))
+
+b= -12.678
+print(b, type(b))
+
+c=10+20J
+print(c, type(c))
+print(c.real)
+print(c.imag)
+
+print("""hafjafjkjnfjndgnjgjngnsjfng \n
+dbjkvfsjnfjjgnfgnjfjd \n
+uukgybjb\t\t\tjybhjbybhjbh
+hjbhbjbjbbjbjhb
+""")
+
+List1= [2,-3.5,2.45,'Hello',[1,2,3],(3,7,9),{'a':123},{5,7},True,10+20J]
+print(List1, type(List1))
+print(List1[3][4])
+print(List1[3][-4])
+List1.append(45)
+print(List1, type(List1))
+
+Tuple1= (2,-3.5,2.45,'Hello',[1,2,3],(3,7,9),{'a':123},{5,7},True,10+20J)
+print(Tuple1, type(Tuple1))
+print(Tuple1[3][4])
+print(Tuple1[3][-4])
+#Tuple1.append(45)
+#print(Tuple1, type(Tuple1))
+
+dict1= {'name': 'Harish','age':20,'class':12,'mail':'gmail.com'}
+print(dict1['name'])
+print(dict1['class'])
+
+
+set1={1, 2, 3, 'harish', 8, 9, 2, 6}
+print(set1, type(set1))
+set1.add(100)
+print(set1)
+
+
+
+
+
 
 
 
