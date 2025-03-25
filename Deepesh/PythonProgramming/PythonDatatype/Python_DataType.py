@@ -11,7 +11,6 @@ Python Data Types :
     ii)  List
     iii) Tuple
 
-
 3.  Dictionary
 4.  Set
 5.  Boolean
