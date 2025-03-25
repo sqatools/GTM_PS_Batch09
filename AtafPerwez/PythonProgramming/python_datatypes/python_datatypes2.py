@@ -129,5 +129,25 @@ print("set2 :", set2) # set2 : {3, 100, 5, 'a', 7, 'b'}
 #print("set3 :", set3)
 # TypeError: unhashable type: 'list'
 
+############################# Boolean ################
+"""
+Properties :
+->  Boolean is immutable data type.
+->  Boolean accepts the only 2 values True or False
+->  Generally booleans value will the output of any specific condition
+"""
+
+val1 = True
+val2 = False
+
+
+n1 = 10
+n2 = 40
+n3 = 10
+print(n1 == n2) # False
+print(n2 == n3) # False
+print(n1 == n3) # True
+
+
 
 
