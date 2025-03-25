@@ -201,7 +201,7 @@ print("_"*50)
 # if we have 2 list and convert into dict, then we can do it with help zip function
 l1 = ['a', 'b', 'c', 'd']
 l2 = [33, 66, 89, 23]
-print(list(zip(l1, l2))) # [('a', 33), ('b', 66), ('c', 89), ('d', 23)]
+#print(list(zip(l1, l2))) # [('a', 33), ('b', 66), ('c', 89), ('d', 23)]
 result = dict(zip(l1, l2))
 print(result, type(result))
 # {'a': 33, 'b': 66, 'c': 89, 'd': 23} <class 'dict'>
