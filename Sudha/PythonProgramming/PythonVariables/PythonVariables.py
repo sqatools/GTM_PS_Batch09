@@ -1,43 +1,28 @@
-a = 20
-# a : variable
-# = : assignment operator
-# 10 : value to store
 
-
-# Address of variable
-print(id(a))  # 140719858076376
-# print : in-built function :  print function shows the output on console
-# id : in-build function : that return the memory address of variable
-
-print("Hello world") # Hello world
-print("value of a :", a) # value of a : 20
+a = 10
+print(id(a))
+# id is inbuilt variable which returns the address of the vaiable
 print(a)
 
-p = 30
-q = 40
-r = 50
-print(p, q, r)
+print("value of a :", a)
 
-#######################################
-# if multiple variables with same value then their address is also same
-x = 50
-y = 50
+p=30
+q=40
+r=50
+print(p,q,r)
 
-
-print("address of x:", x, id(x)) # address of x: 50 140719814561752
-print("address of y:", y, id(y)) # address of y: 50 140719814561752
 x = 100
-print("address of x:", x, id(x)) # address of x: 100 140719814563352
+y = 100
 
-#################################
+print("address of x :", id(x))
+print("address of y :", id(y))
+
 # assign multiple value to multiple variable at a time
 P, Q, R  = 40, 50, 60
 print("Value P :", P)  # Value P : 40
 print("Value Q :", Q)  # Value Q : 50
 print("Value R :", R)  # Value R : 60
 
-
-####################################
 # Assign one value to multiple variables
 
 X = Y = Z = 100
@@ -45,8 +30,6 @@ print("value X :", X, id(X)) # value X : 100 140719858079256
 print("value Y :", Y, id(Y)) # value Y : 100 140719858079256
 print("value Z :", Z, id(Z)) # value Z : 100 140719858079256
 
-
-###############################################
 # Rules to defined variable name
 # -> 1. Variable name should not contain space in name.
 #a d c = 50 : invalid
@@ -94,18 +77,17 @@ Math operation on variables
 %  : remainder operator
 """
 
-print("_"*50)
-### addition of values ###
+print("-"*50)
+
+## addition of values
+
 num1 = 40
-num2 = 50
-num3 = num1 + num2
-print("addition :", num3)
-print("addition2 :", num1+ num2)
+num2 = 90
+num3 = num1+num2
+print("addition of values", num3)
+print("addition2 of values",num1+num2)
 
-### multiplication of values ##
-var1 = num1*num2
-print("multiplication :", var1)
-
+##substraction of values
 ### subtraction of values###
 print("subtraction :", 500 - num1)
 

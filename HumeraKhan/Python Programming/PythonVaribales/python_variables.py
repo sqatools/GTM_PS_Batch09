@@ -1,11 +1,9 @@
 a = 20
+print(id(a))  # 140719858076376
 # a : variable
 # = : assignment operator
 # 10 : value to store
-
-
 # Address of variable
-print(id(a))  # 140719858076376
 # print : in-built function :  print function shows the output on console
 # id : in-build function : that return the memory address of variable
 
@@ -80,10 +78,4 @@ print("NAME :", NAME)
 print("nAME :",nAME)
 print("name :", name)
 print("name :", naME)
-
-
-
-
-
-
 

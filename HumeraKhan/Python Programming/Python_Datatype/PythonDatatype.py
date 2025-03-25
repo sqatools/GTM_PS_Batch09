@@ -1,16 +1,13 @@
 """
 Python Data Types :
-
 1.  Numbers
     i) Integer
     ii) Float
     iii) Complex Number
-
 2.  Sequential
     i)   String
     ii)  List
     iii) Tuple
-
 3.  Dictionary
 4.  Set
 5.  Boolean
@@ -30,15 +27,11 @@ n2 = 4
 n3 = 100
 n4 = 45435435434354545454222333333333
 n5 = -5644545
-
 print(n1, type(n1)) # 0 <class 'int'>
 print(n2, type(n2)) # 4 <class 'int'>
 print(n3, type(n3)) # 100 <class 'int'>
 print(n4, type(n4)) # 45435435434354545454222333333333 <class 'int'>
 print(n5, type(n5)) # -5644545 <class 'int'>
-
-
-
 
 # when we multiply string with number, then it repeats the string that number of times.
 var1 = 'Hello'
@@ -52,21 +45,18 @@ print("_"*50)
 ->  Any positive and negative values can be float data type
 ->  There is no limit for float data type
 """
-
 f1 = 0.0
 f2 = 12.34
 f3 = 4543543543.776899
 f4 = -45676.789
 f5 = 0.45454545
 f6 = 9.0
-
 print("f1 :", f1, type(f1)) # 0.0 <class 'float'>
 print("f2 :", f2, type(f2)) # 12.34 <class 'float'>
 print("f3 :", f3, type(f3)) # 4543543543.776899 <class 'float'>
 print("f4 :", f4, type(f4)) # -45676.789 <class 'float'>
 print("f5 :", f5, type(f5)) # 0.45454545 <class 'float'>
 print("f6 :", f6, type(f6)) # 9.0 <class 'float'>
-
 
 print("_"*50)
 ############ Complex Number #################
@@ -94,7 +84,6 @@ print(var4, type(var4)) # (40+0j) <class 'complex'>
 print(70,'Hello', 80+90j) # 70 Hello (80+90j)
 
 
-
 print("_"*50)
 ############ string data type #################
 """
@@ -105,7 +94,6 @@ print("_"*50)
 4.  String value defined different types of quotes single quotes, double quotes, single triple quote, double triple quote.
 5.  String can contains any data , numbers, special character
 """
-
 s1 = 'h'
 s2 = "Hello Python"
 s3 = "We are learning Python Programming"
@@ -121,15 +109,12 @@ data, computational prediction methods and
 public text collections. It is freely accessible 
 and it is regularly updated
 """
-
 s6 = "My name is 'John' and live in mumbai"
 s7 = 'My name is "John" and live in mumbai %^%RT&^%d45564654654e '
-
 s8 = "1. The STRING database \t\t contains information from \n2. numerous sources, including \t\t experimental \n3. data, computational \t\t prediction methods and "
 
 # \n = line break
 # \t = line space
-
 
 print(s1, type(s1))
 print("_"*50)
@@ -147,25 +132,20 @@ print(s7, type(s7))
 print("_"*50)
 print(s8, type(s8))
 
-
-
 str_a  = "Python"
 
 """
  0  1  2  3  4   5   +ve
  P  y  t  h  o   n
 -6 -5 -4 -3  -2  -1  -ve
-
 """
 
 print("first char :", str_a[0])  # first char : P
 print("third index char :", str_a[3])  # third index char : h
 print("get h with -ve indexing :", str_a[-3]) # get h with -ve indexing : h
 
-
 str9 = "My name is 'John' and live in mumbai"
 print("get m with -ve index :", str9[-4]) #  m
-
 
 
 print("_"*50)
@@ -193,5 +173,3 @@ print(list1[-4])  # {5, 7}
 list2 = [5, 7, 8]
 list2.append(100)
 print(list2) # [5, 7, 8, 100]
-
-
