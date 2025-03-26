@@ -410,3 +410,4 @@ print(l3, type(l3))
 ## bool -> tuple ###  conversion not possible
 ## bool -> dict ###  conversion not possible
 ## bool -> set ###  conversion not possible
+
