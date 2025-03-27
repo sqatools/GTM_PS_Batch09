@@ -41,6 +41,7 @@ print(type(Set1), Set1)
 Set1.add(100)
 print(type(Set1), Set1)
 
+print(Set1)
 
 
 
