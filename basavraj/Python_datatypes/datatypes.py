@@ -26,3 +26,6 @@ Python Data Types :
 ->  There is no limit to defined data in int variable
 
 """
+
+a=10
+print(a,type(a))

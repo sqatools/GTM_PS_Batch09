@@ -5,4 +5,5 @@ hello updated now
 git push
 server
 line6
-
+git pull
+adding content on new file
