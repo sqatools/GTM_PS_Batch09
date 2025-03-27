@@ -11,7 +11,6 @@ Python Data Types :
     ii)  List
     iii) Tuple
 
-
 3.  Dictionary
 4.  Set
 5.  Boolean
@@ -194,3 +193,7 @@ print(list1[-4])  # {5, 7}
 list2 = [5, 7, 8]
 list2.append(100)
 print(list2) # [5, 7, 8, 100]
+
+
+t= (1)
+print(type(t))
