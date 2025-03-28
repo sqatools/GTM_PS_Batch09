@@ -410,3 +410,10 @@ print(l3, type(l3))
 ## bool -> tuple ###  conversion not possible
 ## bool -> dict ###  conversion not possible
 ## bool -> set ###  conversion not possible
+
+######convert list to tuple #######
+
+lis = [10, 20, 100, "varinder"]
+print(lis)
+tup = tuple(lis)
+print("my result would display in tuple:", tup, type(tup))
