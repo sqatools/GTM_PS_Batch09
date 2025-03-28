@@ -43,5 +43,14 @@ print(type(Set1), Set1)
 
 print(Set1)
 
+# Boolean
+n1=10
+n2=40
+n3=50
+print (n1==n2)
+print(n1==n1)
+
+
+
 
 
