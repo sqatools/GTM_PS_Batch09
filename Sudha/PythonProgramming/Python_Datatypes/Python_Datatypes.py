@@ -1,5 +1,4 @@
-"""
-Python Data Types :
+"""Python Data Types :
 
 1.  Numbers
     i) Integer
@@ -38,13 +37,11 @@ print(n3, type(n3)) # 100 <class 'int'>
 print(n4, type(n4)) # 45435435434354545454222333333333 <class 'int'>
 print(n5, type(n5)) # -5644545 <class 'int'>
 
-
-
-
-# when we multiply string with number, then it repeats the string that number of times.
-var1 = 'Hello'
+# when we multiply the string with a number then it will repeat the string with number of times
+var1 = "Hello"
 print(var1*5)
 
+print("_"*50)
 print("_"*50)
 ############ Float #################
 """
@@ -68,17 +65,17 @@ print("f4 :", f4, type(f4)) # -45676.789 <class 'float'>
 print("f5 :", f5, type(f5)) # 0.45454545 <class 'float'>
 print("f6 :", f6, type(f6)) # 9.0 <class 'float'>
 
-
 print("_"*50)
-############ Complex Number #################
+
+##Complex Numbers
 # var1 = x + yj
 # x = real value
 # y = imaginary value
 
 var2 = 10 + 20j
-print(var2, type(var2))
-print("real value :", var2.real) # real value : 10.0
-print("imaginary value:", var2.imag)  # imaginary value: 20.0
+print(var2, type(var2))#(10+20j) <class 'complex'>
+print("value of real :", var2.real) # value of real : 10.0
+print("value of imaginary :", var2.imag) #value of imaginary : 20.0
 
 var3 = 0+50j
 print(var3, type(var3)) # 50j <class 'complex'>
@@ -94,9 +91,6 @@ print(var4, type(var4)) # (40+0j) <class 'complex'>
 
 print(70,'Hello', 80+90j) # 70 Hello (80+90j)
 
-
-
-print("_"*50)
 ############ string data type #################
 """
 # String Properties
@@ -170,6 +164,7 @@ print("get m with -ve index :", str9[-4]) #  m
 
 
 print("_"*50)
+print("_"*50)
 ############ List data type #################
 """
 # Properties of List
@@ -178,20 +173,24 @@ print("_"*50)
 ->  List can contains all different types of values, int, float, sting, list, tuple, dictionary, set, boolean, complex number
 ->  List follows the positive and negative indexing as like string
 ->  There is no limit to defined values in the list
-->  List values are comma seperated.
-"""
-#        0  1     2        3          4          5            6      7     8       9
-list1 = [2, 3.5, 'Hello', [4, 6, 7], (3, 7, 9), {'a': 123}, {5, 7}, True, 40+50j, None]
-#      -10  -9    -8       -7         -6        -5           -4      -3    -2     -1
-#
-print(list1, type(list1))  # <class 'list'>
+->  List values are comma seperated."""
 
-print(list1[3]) # [4, 6, 7]
-print(list1[3][2])  # 7
-# get value with -ve indexing
-print(list1[-4])  # {5, 7}
+#      0   1     2         3        4        5         6     7      8      9
+list1=[2, 3.4, 'Hello', [4,5,6], (3,2,1), {'a':123}, {5,7}, True, 40+50j,None]
+#    -10  -9    -8        -7       -6         -5       -4    -3     -2    -1
 
-list2 = [5, 7, 8]
+print(list1, type(list1))
+print(list1[4])#(3, 2, 1)
+print(list1[3][2])#6
+#get the value using -ve indexing
+print((list1[-4])) #{5, 7}
+
+list2 = [5,6,7]
 list2.append(100)
-print(list2) # [5, 7, 8, 100]
+print(list2) #[5, 6, 7, 100]
+
+
+
+
+
 
