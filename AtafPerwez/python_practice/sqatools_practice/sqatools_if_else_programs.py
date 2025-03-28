@@ -260,6 +260,7 @@ else:
 
 
 
+
 # 21). Python program to check whether the given number is positive or negative and even or odd.
 # Input = 26
 # Output = The given number is positive and even
