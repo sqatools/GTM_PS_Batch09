@@ -218,6 +218,11 @@ while n>0:
     n=n//10
 print(s)
 
+file=open("filename",'r')
+content=file.read()
+print(content)
+file.close()
+
 
 
 
