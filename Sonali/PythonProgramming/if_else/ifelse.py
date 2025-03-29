@@ -45,6 +45,10 @@ else:
     print("num is not devided by 11")
 
 num4=int(input("enter number"))
-for i in range(2,)
+for i in range(2,num4):
+    if num4%i==0:
+        print("prime number")
+    else:
+        print("not a prime number")
 
 
