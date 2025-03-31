@@ -21,4 +21,6 @@ total_bill = total_bill - discount
 #Q3: write a python to create calculator
 """
 ->  Accept three values 1 for operation 2 for calculation.
+
+
 """
