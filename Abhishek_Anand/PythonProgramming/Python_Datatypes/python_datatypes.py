@@ -51,5 +51,5 @@ print("_"*50)
 ->  Float only contains pointer values. e.g 4.5, 5.6, 0.23
 ->  Any positive and negative values can be float data type
 ->  There is no limit for float data type
-"""""
+"""
 
