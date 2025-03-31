@@ -35,6 +35,33 @@ print("the value of e:", e, id(e))
 print("the value of t:", t, id(t))
 print("the value of z:", z, id(z))
 
+# Rules to define Variable name
+# 1. Variable name should not contain space in name
+# a d c = 50 : invalid
+# a_b_c = 50 : Valid
+
+# 2. Can't start variable names with numbers
+# 1_var = 50 : invalid
+# Var_1 = 50 : Valid
+
+# 3. There is no limit for variable name length
+# abc_xyz_python_var = 40
+
+# 4. Can't contain special characters in variable name except underscore _
+# var@12# = 40 :  invalid
+# var_123 = 40 : valid
+
+# 5. Variable name is case - sensitive
+NaME = 'Abhishek'
+NAME = 'Aditya'
+nAME = 'Akshay'
+
+print("NaME :", NaME)
+print("NAME :", NAME)
+print("nAME ", nAME)
+
+
+
 
 
 
