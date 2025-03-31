@@ -60,6 +60,19 @@ print("NaME :", NaME)
 print("NAME :", NAME)
 print("nAME ", nAME)
 
+"""
+Math operation on variables
+
++ :  plus operator
+- :  subtraction
+* :  multiplication
+/ and // : division
+== :  equal to operator
+!= : not equal to
+** : power operator
+%  : remainder operator
+"""
+
 
 
 
