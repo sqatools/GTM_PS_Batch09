@@ -20,5 +20,12 @@ total_bill = total_bill - discount
 
 #Q3: write a python to create calculator
 """
-->  Accept three values 1 for operation 2 for calculation.
+->  Accept three values 1 value for operation 2 values for calculation.
+val1 = input()
+val2 = int(input()) # number
+val3 = int(input()) # number
+if input is + and add 2 values
+if input is * then multiply the values
+if input is / then devide values
+if input is - then subtract the values
 """
