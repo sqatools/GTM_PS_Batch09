@@ -301,12 +301,64 @@ for i in range(10,15+1):
     if i==13:
         continue
     print(i,end=" ")
-
+print()
 print("-" * 50)
 
 
+#2929). Python program to find the electricity bill. According to the following conditions:
+"""Up to 50 units rs 0.50/unit
+Up to 100 units rs 0.75/unit
+Up to 250 units rs 1.25/unit
+above 250 rs 1.50/unit
+an additional surcharge of 17% is added to the bill
+Input = 350
+Output = 438.7 """
+#total_unit = int(input("Total units Consumed="))
+total_unit =350
+bill_amount = 0
 
+# If each unit we will add to rate amount in total bill amount
+for bill_unit in range(1, total_unit+1):
+    if bill_unit <= 50:
+        bill_amount = bill_amount + 0.50
+    elif bill_unit > 50 and bill_amount <= 100:
+        bill_amount = bill_amount + 0.75
+    elif bill_unit > 100 and bill_amount <= 250:
+        bill_amount = bill_amount + 1.25
+    elif bill_unit > 250:
+        bill_amount = bill_amount + 1.5
 
+# Addition 17% surcharge on total bill amount
+bill_amount_sur = bill_amount + bill_amount * (17/100)
+print("Bill amount with surcharge :", bill_amount_sur)
 
+#30). Python program to check whether a given year is a leap or not.
+#year = int(input("Enter the year: "))
+year=2023
+if (year%100 != 0 or year%400 == 0) and year%4 == 0:
+    print("leap year.")
+else:
+    print("not leap year.")
 
+#->  Accept three values 1 for operation 2 for calculation.
+"""  # ->  Accept three values 1 value for operation 2 values for calculation.
+ val1 = input()
+ val2 = int(input()) # number
+ val3 = int(input()) # number
+ if input is + and add 2 values
+ if input is * then multiply the values
+ if input is / then devide values
+ if input is - then subtract the values
+ """
+operation=input("enter the operation:")
+val2=int(input("enter the first number:"))
+val3=int(input("enter the second number:"))
+if operation=="+":
+    print(val2+val3)
+elif operation=="*":
+    print(val2*val3)
+elif operation=="/":
+    print(val2/val3)
+elif operation=="-":
+    print(val2-val3)
 
