@@ -134,3 +134,67 @@ print("-"*50)
 list1 = [4, 5, 7, 9, 2, 1]
 list1.reverse()
 print(list1)
+print("-"*50)
+#16). Python program to copy or clone one list to another list.
+list1 = [4, 5, 7, 9, 2, 1]
+#list2=list1[:]
+#print(list2)
+new_list=[]
+for i in list1:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)
+print("-"*50)
+
+
+#17). Python program to return True if two lists have any common member.
+
+#Input list
+list1 = [2,4,7,8,3]
+list2 = [4,5,0]
+
+for value in list1:
+    if value in list2:
+        #Printing output
+        print("True")
+
+print("-"*50)
+
+
+#18). Python program to print a specific list after
+# removing the 1st, 3rd, and 6th elements from the list.
+l1=[1,2,3,4,5,6,7,8,9]
+l1.pop(0)
+l1.pop(2)
+l1.pop(5)
+print(l1)
+
+print("-"*50)
+#method 2
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+modified_list = [my_list[i] for i in range(len(my_list)) if i not in [0, 2, 5]]
+print(modified_list)
+
+print("-"*50)
+
+#19). Python program to remove negative values from the list.
+
+lst=[1,-3,4,-9,5,-6,-9,11]
+for i in lst:
+    if i>0:
+        print(i,end=" ")
+print()
+print("-"*50)
+
+#20). Python program to get a list of all elements which are divided by 3 and 7.
+
+lst=[3,7,0,2,6,14,88,21]
+
+for i in lst:
+    if i%3==0 or i%7==0:
+        print(i,end=" ")
+
+print()
+print("-"*50)
+
+
