@@ -451,3 +451,6 @@ Marks<35: Fail
 Input = Marks: 88
 Output = Science
 """
+
+
+age = int(input("Please enter the "))
