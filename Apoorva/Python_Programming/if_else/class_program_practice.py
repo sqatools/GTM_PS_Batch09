@@ -21,7 +21,7 @@ discount = total_bi*(20/100)
 total_bill = total_bill - discount
 """
 
-item1_cost = int(input("please enter item1 cost:"))
+"""item1_cost = int(input("please enter item1 cost:"))
 item2_cost = int(input("please enter item2 cost:"))
 item3_cost = int(input("please enter item3 cost:"))
 
@@ -35,6 +35,7 @@ if sum >= 1000:
 else:
     total = sum
     print( "total without discount is:" , total )
+    """
 
 
 #Q3: write a python to create calculator
@@ -42,7 +43,22 @@ else:
 ->  Accept three values 1 for operation 2 for calculation.
 """
 
-value1 = int(input("please enter value1 :"))
+value1 = input("Please enter the type of operation:")
 value2 = int(input("please enter value2 :"))
 value3 = int(input("please enter value3 :"))
+print(value1, value2, value3)
+
+if value1 == "+":
+    print(value2 + value3)
+elif value1 == "*":
+    print(value2* value3)
+elif value1 == "/":
+    print(value2/value3)
+elif value1 == "-":
+    print(value2-value3)
+else:
+    print("else condition:" ,value1,value2,value3)
+
+
+
 
