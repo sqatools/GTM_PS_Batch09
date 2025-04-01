@@ -59,3 +59,12 @@ for i in range(11):
 print("_" *50)
 print(x)
 
+print("_" *50)
+# Print fibonacci series
+# 1,1,2,3,5,8,13,21,33
+
+a=0
+b=1
+for i in range(10):
+    a,b = b, a+b
+    print(a, b)
