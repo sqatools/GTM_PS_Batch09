@@ -195,3 +195,5 @@ list2.append(100)
 print(list2) # [5, 7, 8, 100]
 
 
+t= (1)
+print(type(t))
