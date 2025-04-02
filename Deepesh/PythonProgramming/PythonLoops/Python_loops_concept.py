@@ -250,7 +250,7 @@ for i in range(1, 6):  # i=1, 2, 3, 4
         print("*", end=" ")
 
     print()
-
+print()
 # HW: write a pattern with nested loop
 """
 
@@ -260,4 +260,10 @@ for i in range(1, 6):  # i=1, 2, 3, 4
 * *
 *
 """
+#class home work
+for i in range(1,6):
+    for j in range(5-i,-1,-1):
+        print("*",end=" ")
+    print()
+
 
