@@ -89,8 +89,12 @@ else:
 6). Python program to check given number is a prime number or not.
 
 Solution
-7). Python program to check given number is odd or even.
+"""
 
+"""
+
+7). Python program to check given number is odd or even.
+Solution 
 """
 """
 print("Solution 7")
@@ -102,7 +106,7 @@ else:
     """
 """
 
-Solution
+
 8). Python program to check a given number is part of the Fibonacci series from 1 to 10.
 
 Solution
@@ -110,7 +114,7 @@ Solution
 
 Solution
 10). Python program to validate user_id in the list of user_ids.
-
+Solution
 """
 """
 print("Solution 10")
@@ -126,7 +130,7 @@ else:
 
 
 11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
-
+Solution
 """
 """
 print("Solution 11")
@@ -141,20 +145,79 @@ elif num % 3 == 0:
 12). Python program to describe the interview process.
 
 Solution
+"""
+"""
+round1 = input("Enter the result of round1 = ")
+
+if round1 == "Passed":
+    round2 = input("Enter the result of round2 = ")
+    if round2 == "Passed":
+        print("you have passed round 1 and round 2 you are placed")
+    else:
+        print("you cleared round1 and not cleared round2, not placed")
+else:
+    print("you are not cleared round1, not placed")
+"""
+
+"""
 13). Python program to determine whether a given number is available in the list of numbers or not.
 
 Solution
+"""
+"""
+num = int(input("Enter the number = "))
+list1 = [4, 56, 32, 89, 90, 43, 12]
+if num in list1:
+    print(f"{num} is in the list")
+else:
+    print(f"{num} not in the list")
+"""
+"""
+
 14). Python program to find the largest number among three numbers.
 
 Solution
+"""
+"""
+num1 = int(input("Enter first number = "))
+num2 = int(input("Enter second number = "))
+num3 = int(input("Enter third number = "))
+if num1 > num2:
+    if num1 > num3:
+        print("Greatest of all three numbers = ", num1)
+    else:
+        print("Greatest of all the number = ", num3)
+elif num2 > num3:
+    print("Greatest of all the number = ", num2)
+else:
+    print("Greatest of all the numbers = ", num3)
+"""
+
+"""
+
+
 15). Python program to check any person eligible to vote or not
 age > 18+ : eligible
 age < 18: not eligible
 
 Solution
+"""
+"""
+age = int(input("Please enter the age = "))
+if age >= 18:
+    print("Eligible for vote")
+else:
+    print("Not Eligible for vote")
+"""
+"""
+
 16). Python program to check whether any given number is a palindrome.
 Input: 121
 Output: palindrome
+"""
+# num = int(input("Enter the number = "))
+
+"""
 
 Solution
 17). Python program to check if any given string is palindrome or not.
@@ -165,22 +228,62 @@ Solution
 18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
 Input = Enter marks: 45
 Output = Pass
-
 Solution
+"""
+"""
+marks = int(input("Enter the marks = "))
+if marks > 45:
+    print("Pass")
+else:
+    print("Fail")
+"""
+"""
 19). Python program to check whether the given number is positive or not.
 Input = 20
 Output = True
 
 Solution
+"""
+"""
+num = int(input("Enter the number = "))
+if num > 0:
+    print("True")
+else:
+    print("False")
+"""
+"""
+
 20). Python program to check whether the given number is negative or not.
 Input = -45
 Output = True
 
 Solution
 
+"""
+"""
+num = int(input("Enter the number = "))
+if num < 0:
+    print("True")
+else:
+    print("False")
+"""
+"""
+
 21). Python program to check whether the given number is positive or negative and even or odd.
 Input = 26
 Output = The given number is positive and even
+"""
+num1 = int(input("Enter the number = "))
+if num1 > 0:
+    if num1%2 == 0:
+        print("The given number is positive and even")
+    else:
+        print("The given number is Positive and odd")
+else:
+    print("The given number is negative")
+
+
+"""
 
 Solution
 22). Python program to print the largest number from two numbers.
@@ -189,6 +292,16 @@ Input:
 Output = 63
 
 Solution
+"""
+"""
+num1 = int(input("Enter first number = "))
+num2 = int(input("Enter second number = "))
+if num1 > num2:
+    print(f"{num1}")
+else:
+    print(f"{num2}")
+"""
+"""
 23). Python program to check whether a given character is uppercase or not.
 Input = A
 Output = The given character is an Uppercase
@@ -451,6 +564,3 @@ Marks<35: Fail
 Input = Marks: 88
 Output = Science
 """
-
-
-age = int(input("Please enter the "))
