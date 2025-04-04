@@ -73,3 +73,54 @@ a=5
 b=6
 c=(a-b) * (a+b)
 print("a^2 - b^2 =",c)
+
+print("_"*50)
+
+n1=20
+n2=30
+print(n1==n2)
+
+print("_"*50)
+
+n1=450
+n2=800
+n3=200
+if(n1>n2) and (n1>n3):
+    print(n1,"is greater than",n2,"and",n3)
+elif (n2>n1) and (n2>n3):
+    print(n2,"is greater than",n1,"and",n3)
+elif (n3>n1) and (n3>n2):
+    print(n3,"is greater than",n1,"and",n2)
+
+    print("_"*50)
+
+num=5
+for j in range(1,11,1):
+    print(num,"*",j,"=",j*num)
+
+    print("_"*50)
+
+for i in range(1,11):
+    print(i)
+
+    print("_"*50)
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
+
+print("_"*50)
+
+for i in range(6,1):
+    for j in range(6,i+1):
+        print(" *")
+print()
+
+print("_"*50)
+
+
+n=5
+while n<=50:
+    print(n)
+    n+=5
