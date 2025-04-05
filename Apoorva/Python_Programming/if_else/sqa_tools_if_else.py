@@ -1,33 +1,23 @@
-"""
-1). Python program to check given number is divided by 3 or not.
+#1). Python program to check given number is divided by 3 or not.
 
-"""
-"""
-print("Solution 1")
-num = int((input("Enter the number = ")))
-print(num//3)# Quotient value
-print(num%3)#remainder value
-if((num%3)==0):
-    print("Number divisible ny 3")
+num1 = 10
+
+if num1%3 ==0:
+    print("yes:" , num1)
 else:
-    print("Number not divisible by 3")
-"""
-"""
+    print("no:", num1)
 
-Solution
-2). If else program to get all the numbers divided by 3 from 1 to 30.
+print("-"* 40)
+#2). If else program to get all the numbers divided by 3 from 1 to 30.
 
-"""
-"""
-print("Solution 2")
-for i in range(1,31):
-    if i % 3 == 0:
-        print(i)
-"""
-
-"""
+for num in range(1,31):
+    if num%3 == 0:
+        print(num , end=" ")
+        print()
 
 
+print("-"* 100)
+"""
 3). If else program to assign grades as per total marks.
 marks > 40: Fail
 marks 40 – 50: grade C
@@ -37,276 +27,274 @@ marks 70 – 80: grade A+
 marks 80 – 90: grade A++
 marks 90 – 100: grade Excellent
 marks > 100: Invalid marks
+"""
 
-"""
-"""
-print("Solution 3")
-marks = int(input("Enter marks = "))
+marks = 50
+
 if marks < 40:
-    print("Fail")
-elif 40 < marks < 50:
-    print("Grade C")
-elif 50 < marks < 60:
-    print("Grade B")
-elif 60 < marks < 70:
-    print("Grade A")
-elif 70 < marks < 80:
+    print("fail")
+elif 40<=marks<= 50:
+    print("grade C")
+elif 50 < marks <= 60:
+    print("grade b")
+elif 60<marks<= 70:
+    print("grade A")
+elif 70<marks<= 80:
     print("Grade A+")
-elif 80 < marks < 90:
-    print("Grade A++")
-elif 90 < marks < 100:
-    print("grade Excellent")
-elif marks > 100:
-    print("Invalid Marks")
-"""
-"""
-4). Python program to check the given number divided by 3 and 5.
-"""
-"""
-print("Solution 4")
-num = int(input("enter the number = "))
-if num % 3 == 0 and num % 5 == 0:
-    print("Yes, the number divisible by 3 and 5")
+elif 80<marks<= 90:
+    print("grade A++")
+elif 90<marks<= 100:
+    print("grade excellent")
+elif marks> 100:
+    print("invalid marks")
+
+
+print("*"* 50)
+#4). Python program to check the given number divided by 3 and 5.
+
+num = 49
+if num% 3 ==0 and num % 5 ==0:
+    print("yes")
 else:
-    print("No,the number is not divisible by 3 and 5 ")
-"""
-"""
+    print("no")
 
+print("*"* 50)
 
-5). Python program to print the square of the number if it is divided by 11.
-"""
-"""
-print("Solution 5")
-num = int(input("enter the number = "))
-if num % 11 == 0 :
-    print("Given Number divisible by 11, square of given number", num**2)
+#5). Python program to print the square of the number if it is divided by 11.
+
+num1 = 33
+
+if num1 % 11 ==0:
+    print(num1*2)
 else:
-    print("Given number not divisible by 11")
-"""
+    print("not divisible by 11")
 
-"""
+print("*"* 50)
 
-6). Python program to check given number is a prime number or not.
+#6). Python program to check given number is a prime number or not.
 
-Solution
-"""
+num1 = 6
 
-"""
+count = 0
 
-7). Python program to check given number is odd or even.
-Solution 
-"""
-"""
-print("Solution 7")
-num = int(input("Enter the number = "))
-if num % 2 == 0:
-    print("Given number is even")
+for i in range(2,num1):
+    if (num1%i) == 0:
+        count = count + 1
+
+if count > 0:
+    print("it is not a prime number:", num1)
 else:
-    print("Given number is odd")
-    """
-"""
+    print("it's a prime number:", num1)
 
 
-8). Python program to check a given number is part of the Fibonacci series from 1 to 10.
+#7). Python program to check given number is odd or even.
 
-Solution
-9). Python program to check authentication with the given username and password.
+num1 = 26
 
-Solution
-10). Python program to validate user_id in the list of user_ids.
-Solution
-"""
-"""
-print("Solution 10")
-list1_id = [1,4,7,23,9]
-x = int(input("Enter number to validate = "))
-if x in list1_id:
-    print("Valid ID")
+if num1 %2 ==0:
+    print("even:", num1)
 else:
-    print("Invalid ID")
-"""
+    print("odd:", num1)
 
-"""
+print("*"* 50)
+
+#8). Python program to check a given number is part of the Fibonacci series from 1 to 10.
+fib = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+num1 = 7
+
+if num1 in fib:
+    print("yes, num1 is part of fibonacci series:", num1)
+else:
+    print("no, not a part of fibonacci series:", num1)
+
+print("+"* 50)
+#9). Python program to check authentication with the given username and password.
+
+db_username = "apoorva"
+db_password = "123456"
+
+username = "apoor"
+password = "213"
+
+if username == db_username and password == db_password:
+    print("Authentication successful")
+else:
+    print("Login failed")
+
+print("&"* 50)
+
+#10). Python program to validate user_id in the list of user_ids.
+
+user_ids = [123,234,345,456,567,6787, 457567, 46,454646]
+
+id = 123
+
+if id in user_ids:
+    print("present")
+else:
+    print("not present")
 
 
-11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
-Solution
-"""
-"""
-print("Solution 11")
-num = int(input("Please enter the number = "))
-if num % 2 == 0:
-    print(num**2)
-elif num % 3 == 0:
-    print(num**3)
-"""
+print("*"* 50)
 
-"""
-12). Python program to describe the interview process.
+#11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
 
-Solution
-"""
-"""
-round1 = input("Enter the result of round1 = ")
+var = 6
 
-if round1 == "Passed":
-    round2 = input("Enter the result of round2 = ")
-    if round2 == "Passed":
-        print("you have passed round 1 and round 2 you are placed")
+if var%2 == 0:
+    print("divisible by 2:", var**2)
+elif var%3 == 0:
+    print("divisible by 3:", var**3)
+
+print("*"* 50)
+
+#12). Python program to describe the interview process.
+
+round1 = "pass"
+round2 = "pass"
+round3 = "fail"
+
+if round1 == "pass":
+    print("1st round cleared")
+    if round2 == "pass":
+        print("2nd round cleared")
+        if round3 == "pass":
+            print("congrats!, selected")
+        else:
+            print("Sorry, try next time")
     else:
-        print("you cleared round1 and not cleared round2, not placed")
+        print("2nd round failed")
 else:
-    print("you are not cleared round1, not placed")
-"""
+    print("1st round failed")
 
-"""
-13). Python program to determine whether a given number is available in the list of numbers or not.
+print("*"*50)
 
-Solution
-"""
-"""
-num = int(input("Enter the number = "))
-list1 = [4, 56, 32, 89, 90, 43, 12]
-if num in list1:
-    print(f"{num} is in the list")
+
+#13). Python program to determine whether a given number is available in the list of numbers or not.
+
+num1 = 0
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
+
+if num1 in list1:
+    print("present", num1)
 else:
-    print(f"{num} not in the list")
-"""
-"""
+    print("not present", num1)
 
-14). Python program to find the largest number among three numbers.
 
-Solution
-"""
-"""
-num1 = int(input("Enter first number = "))
-num2 = int(input("Enter second number = "))
-num3 = int(input("Enter third number = "))
-if num1 > num2:
-    if num1 > num3:
-        print("Greatest of all three numbers = ", num1)
-    else:
-        print("Greatest of all the number = ", num3)
-elif num2 > num3:
-    print("Greatest of all the number = ", num2)
+#14). Python program to find the largest number among three numbers.
+
+a = 7
+b = 7
+c = 8
+
+if  a>b and a>c:
+    print("a is largest:", a)
+elif b>a and b>c:
+    print("b is greatest", b)
+elif c>a and c> b:
+    print("c is gratest:", c)
 else:
-    print("Greatest of all the numbers = ", num3)
-"""
+    print("none is greater")
 
-"""
+print("*"* 50)
 
+#15). Python program to check any person eligible to vote or not
+#age > 18+ : eligible
+#age < 18: not eligible
 
-15). Python program to check any person eligible to vote or not
-age > 18+ : eligible
-age < 18: not eligible
+age = 34
 
-Solution
-"""
-"""
-age = int(input("Please enter the age = "))
 if age >= 18:
-    print("Eligible for vote")
+    print("yes, eligible to vote:", age)
 else:
-    print("Not Eligible for vote")
-"""
-"""
+    print("no, not eligible to vote:", age)
 
-16). Python program to check whether any given number is a palindrome.
-Input: 121
-Output: palindrome
-"""
-# num = int(input("Enter the number = "))
+print("*"* 50)
 
-"""
+#18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
+#Input = Enter marks: 45
+#Output = Pass
 
-Solution
-17). Python program to check if any given string is palindrome or not.
-Input: ‘jaj’
-output = palindrome
+marks = 100
 
-Solution
-18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
-Input = Enter marks: 45
-Output = Pass
-Solution
-"""
-"""
-marks = int(input("Enter the marks = "))
-if marks > 45:
-    print("Pass")
+if marks >=35:
+    print("passed the exam:", marks)
 else:
-    print("Fail")
-"""
-"""
-19). Python program to check whether the given number is positive or not.
-Input = 20
-Output = True
+    print("failed in exam:", marks)
 
-Solution
-"""
-"""
-num = int(input("Enter the number = "))
-if num > 0:
-    print("True")
+print("*"* 50)
+
+
+#19). Python program to check whether the given number is positive or not.
+#Input = 20
+#Output = True
+
+num = -1
+
+if num>=0:
+    print("positive:", num)
 else:
-    print("False")
-"""
-"""
+    print("negative:", num)
 
-20). Python program to check whether the given number is negative or not.
-Input = -45
-Output = True
 
-Solution
+#20). Python program to check whether the given number is negative or not.
+#Input = -45
+#Output = True
 
-"""
-"""
-num = int(input("Enter the number = "))
-if num < 0:
-    print("True")
+num1  = 0
+
+if num1<0:
+    print("negative", num1)
+
 else:
-    print("False")
-"""
-"""
+    print("positive", num1)
 
-21). Python program to check whether the given number is positive or negative and even or odd.
-Input = 26
-Output = The given number is positive and even
-"""
-num1 = int(input("Enter the number = "))
-if num1 > 0:
+print("*"* 50)
+
+#21). Python program to check whether the given number is positive or negative and even or odd.
+#Input = 26
+#Output = The given number is positive and even
+
+num1 = -7
+
+if num1>0:
     if num1%2 == 0:
-        print("The given number is positive and even")
+        print("positive and even:", num1)
     else:
-        print("The given number is Positive and odd")
+        print("positive and odd:", num1)
 else:
-    print("The given number is negative")
+    if num1%2 ==0:
+        print("negative and even:", num1)
+    else:
+        print("negative and odd:", num1)
+
+print("*"*50)
 
 
-"""
+#22). Python program to print the largest number from two numbers.
+#Input:
+#25, 63
+#output: 63
 
-Solution
-22). Python program to print the largest number from two numbers.
-Input:
-25, 63
-Output = 63
+a= 99
+b =99
 
-Solution
-"""
-"""
-num1 = int(input("Enter first number = "))
-num2 = int(input("Enter second number = "))
-if num1 > num2:
-    print(f"{num1}")
+if a>b:
+    print(a)
 else:
-    print(f"{num2}")
+    print(b)
+
+print("*"*50)
+
+
 """
-"""
+
 23). Python program to check whether a given character is uppercase or not.
 Input = A
 Output = The given character is an Uppercase
 
-Solution
+
 24). Python program to check whether the given character is lowercase or not.
 Input = c
 Output = True
@@ -325,17 +313,22 @@ Solution
 27). Python program to check whether the given input is a string or not.
 Input = ‘sqatools’
 Output = True
+"""
 
-Solution
-28). Python program to print all the numbers from 10-15 except 13
-Output:
-10
-11
-12
-14
+#28). Python program to print all the numbers from 10-15 except 13
+#Output:
+#10
+#11
+#12
+#14
 
-Solution
-29). Python program to find the electricity bill. According to the following conditions:
+for i in range(10,16):
+    if i != 13:
+        print(i)
+
+print("*"*50)
+
+"""29). Python program to find the electricity bill. According to the following conditions:
 Up to 50 units rs 0.50/unit
 Up to 100 units rs 0.75/unit
 Up to 250 units rs 1.25/unit
@@ -343,8 +336,16 @@ above 250 rs 1.50/unit
 an additional surcharge of 17% is added to the bill
 Input = 350
 Output = 438.75
+"""
 
-Solution
+units = 350
+
+if 
+
+
+
+
+"""
 30). Python program to check whether a given year is a leap or not.
 Input = 2000
 Output = The given year is a leap year
@@ -564,3 +565,16 @@ Marks<35: Fail
 Input = Marks: 88
 Output = Science
 """
+
+
+
+
+
+# 16). Python program to check whether any given number is a palindrome.
+# Input: 121
+# Output: palindrome
+
+# 17). Python program to check if any given string is palindrome or not.
+# Input: ‘jaj’
+# output = palindrome
+
