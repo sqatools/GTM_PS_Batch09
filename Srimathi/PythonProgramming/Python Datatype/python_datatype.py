@@ -96,33 +96,6 @@ list1 = [element for (value,element) in enumerate(list1)
 print(list1)
 
 
-tup2=(6,9,10,('a','b','c'), 13)
-print(tup2[2])
-print(tup2[-2])
-
-# Python tuple program to create a tuple with 2 lists of data.
-tup1 = [4, 6, 8]
-tup2 = [7, 1, 4]
-tup=tuple(zip(tup1, tup2))
-print(tup)
-
-#Python tuple program to find the maximum value from a tuple.
-tup1 = (41, 15, 69, 55)
-print("Maximum value", max(tup1))
-
-
-#Python tuple program to create a tuple and find an element from it by its index no.
-tup1 = (4, 8, 9, 1)
-print(tup1[2])
-
-#Python tuple program to assign values of tuples to several variables and print them.
-tup1 = (6,7,3)
-a,b,c = tup1
-print("a:",tup1[0])
-print("b:",tup1[1])
-print("c:",tup1[2])
-
-
 
 
 

@@ -1,4 +1,5 @@
-"""Python Data Types :
+"""
+Python Data Types :
 
 1.  Numbers
     i) Integer
@@ -25,6 +26,7 @@
 ->  There is no limit to defined data in int variable
 
 """
+
 n1 = 0
 n2 = 4
 n3 = 100
@@ -36,12 +38,12 @@ print(n2, type(n2)) # 4 <class 'int'>
 print(n3, type(n3)) # 100 <class 'int'>
 print(n4, type(n4)) # 45435435434354545454222333333333 <class 'int'>
 print(n5, type(n5)) # -5644545 <class 'int'>
+print(n2, type(n2))
 
-# when we multiply the string with a number then it will repeat the string with number of times
-var1 = "Hello"
-print(var1*5)
+# when we multiply string with number, then it repeats the string that number of times.
+var1 = 'Hello'
+print(var1*10)
 
-print("_"*50)
 print("_"*50)
 ############ Float #################
 """
@@ -58,7 +60,8 @@ f4 = -45676.789
 f5 = 0.45454545
 f6 = 9.0
 
-print("f1 :", f1, type(f1)) # 0.0 <class 'float'>
+print("f1:", f1,  type(f1))
+print(f1, type(f1))
 print("f2 :", f2, type(f2)) # 12.34 <class 'float'>
 print("f3 :", f3, type(f3)) # 4543543543.776899 <class 'float'>
 print("f4 :", f4, type(f4)) # -45676.789 <class 'float'>
@@ -67,30 +70,27 @@ print("f6 :", f6, type(f6)) # 9.0 <class 'float'>
 
 print("_"*50)
 
-##Complex Numbers
-# var1 = x + yj
-# x = real value
-# y = imaginary value
+#   complex numbers    ###
+
+#var1 = x + yj
+# x = real number
+# y = imaginary number
 
 var2 = 10 + 20j
-print(var2, type(var2))#(10+20j) <class 'complex'>
-print("value of real :", var2.real) # value of real : 10.0
-print("value of imaginary :", var2.imag) #value of imaginary : 20.0
+
+print("real value:", var2.real)
+print("imaginary value:", var2.imag)
 
 var3 = 0+50j
-print(var3, type(var3)) # 50j <class 'complex'>
+print(var3, type(var3))
 
-var5 = 50j + 70
-print(var5, type(var5)) # (70+50j) <class 'complex'>
+var4 = 50j+0
+print(var4, type(var4))
 
-var6 = "40 + 60j"
-print(var6, type(var6)) # 40 + 60j <class 'str'>
+var5 = 50j + 60j
+print(var5, type(var5))
 
-var4 = 40+0j
-print(var4, type(var4)) # (40+0j) <class 'complex'>
-
-print(70,'Hello', 80+90j) # 70 Hello (80+90j)
-
+print("_"*50)
 ############ string data type #################
 """
 # String Properties
@@ -125,7 +125,6 @@ s8 = "1. The STRING database \t\t contains information from \n2. numerous source
 # \n = line break
 # \t = line space
 
-
 print(s1, type(s1))
 print("_"*50)
 print(s2, type(s2))
@@ -143,67 +142,64 @@ print("_"*50)
 print(s8, type(s8))
 
 
+#
+print("_"*50)
 
-str_a  = "Python"
+str_a = "PyTHON"
+"""""
 
-"""
- 0  1  2  3  4   5   +ve
- P  y  t  h  o   n
--6 -5 -4 -3  -2  -1  -ve
+0  1 2 3 4 5  : +ve 
+P  Y  T  H  O  N
+-6 -5 -4 -3 -2 -1  : -ve
 
-"""
+"""""
 
-print("first char :", str_a[0])  # first char : P
+print("first char:", str_a[0])
 print("third index char :", str_a[3])  # third index char : h
 print("get h with -ve indexing :", str_a[-3]) # get h with -ve indexing : h
+print("get the -ve index value of N:", str_a[-1])
 
 
+print("_"*50)
 str9 = "My name is 'John' and live in mumbai"
-print("get m with -ve index :", str9[-4]) #  m
+print("get m with -ve index :", str9[-4])
+
+str10 = "Ab h"
+print("index value of A:", str10[-4])
+print("index value of h:", str10[-1])
+print("index value of space:", str10[-2])
 
 
+"""""
+#### Properties of List
+->  List is mutable data type, we can modify the list content
+->  List define with square bracket
+->  List can contains all different types of values, int, float, string, list, tuple, dictionary, set, boolean, complex numbers
+->  List follows the positive and negative indexing as like string
+->  There is no limit to defined values in the list
+->  List values are comma separated.
 
-print("_"*50)
-print("_"*50)
-############ List data type #################
-"""
+""""""
+
 # Properties of List
 ->  List is mutable data type, we can modify the list content
 ->  List define with square bracket
 ->  List can contains all different types of values, int, float, sting, list, tuple, dictionary, set, boolean, complex number
 ->  List follows the positive and negative indexing as like string
 ->  There is no limit to defined values in the list
-->  List values are comma seperated."""
+->  List values are comma seperated.
 
-#      0   1     2         3        4        5         6     7      8      9
-list1=[2, 3.4, 'Hello', [4,5,6], (3,2,1), {'a':123}, {5,7}, True, 40+50j,None]
-#    -10  -9    -8        -7       -6         -5       -4    -3     -2    -1
+"""
+
+#        0  1     2        3          4          5            6      7     8       9
+list1 = [2, 3.5, 'Hello', [4, 6, 7], (3, 7, 9), {'a': 123}, {5, 7}, True, 40+50j, None]
+#      -10  -9    -8       -7         -6        -5           -4      -3    -2     -1
 
 print(list1, type(list1))
-print(list1[4])#(3, 2, 1)
-print(list1[3][2])#6
-#get the value using -ve indexing
-print((list1[-4])) #{5, 7}
 
-list2 = [5,6,7]
-list2.append(100)
-print(list2) #[5, 6, 7, 100]
+print(list1[0])
+print(list1[4][0])
 
-
-##Tuple##
-tuple1 = (1,3.4,'Hello',[4,5,6], (3,4,5),{'a':123}, {4,5,6},True)
-print(tuple1,type(tuple1))
-"""
-Properties of Tuple
-->  Tuple is immutable data type, once it is defined can not change the values.
-->  Tuple can contain all types data, int, float, complex, str, list, tuple, dict, bool.
-->  Tuple follows positive negative indexing as like string and list.
-->  Tuple store data in with round brackets.
-->  In terms of performance, tuple is faster than list.
-"""
-
-
-
-
-
-
+list2 = [10, 20, 30]
+list2.append(150)
+print(list2)
