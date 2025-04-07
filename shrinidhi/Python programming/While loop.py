@@ -61,3 +61,27 @@ while y <=100:
 3
 4
 """
+print('-'*50)
+for i in range(1,10):
+    if i==5:
+        continue
+    elif(i==7):
+        break
+    else:
+         i=i+1
+    print(i)
+
+print('-'*50)
+
+# Print reverse of a number
+
+num1 = 87654321
+reverse=0
+
+while num1>0:
+    temp = num1%10 #3 , 2, 1
+    reverse = reverse*10 + temp #3 , 32
+    num1 = num1 //10 #12 , 1 ,
+
+print(reverse)
+
