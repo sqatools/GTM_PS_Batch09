@@ -74,9 +74,6 @@ else:
 
  # 7. Python program to check given number is odd or even.
 
- e=int(input("Enter value"))
-
-
 
 
 
