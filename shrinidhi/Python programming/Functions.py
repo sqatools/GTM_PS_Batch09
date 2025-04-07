@@ -10,6 +10,5 @@ print(chr(97))
 for i in range(65,91):
   print(chr(i),end=" ")
 
-
 print('-'*50)
 
