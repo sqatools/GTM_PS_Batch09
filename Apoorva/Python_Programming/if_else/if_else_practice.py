@@ -73,6 +73,18 @@ if round1 == "pass":
 else:
     print("Round one: Failed")
 
+a = 'hello'
+print(a,type(a))
+
+
+import json
+a = '{"name" : "apoorva", "mobile": 8296936484}'
+print(a, type(a))
+
+dict4 = json.loads(a)
+print(dict4,type(dict4))
+
+
 
 
 
