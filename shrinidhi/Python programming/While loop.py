@@ -60,36 +60,28 @@ while y <=100:
 2
 3
 4
-
 """
-
-print("_"*50)
-# for loop with continue
-
-for i in range(1, 11): #i=1, 2, 3, 7, 8, 9, 10
-    if i > 3 and i < 7:
+print('-'*50)
+for i in range(1,10):
+    if i==5:
         continue
+    elif(i==7):
+        break
+    else:
+         i=i+1
     print(i)
 
+print('-'*50)
 
-print("_"*40)
-# while loop program
-# write a program to reverse a integer number.
+# Print reverse of a number
 
-num1 = 123
-#num1 = 35789
-rev_val = 0
-count = 0
-while num1 > 0: # 12 > 0| 1 > 0 | 0 > 0
-    temp = num1%10 # 3, 2, 1
-    rev_val = rev_val*10 + temp # 3, 32
-    # 0*10 + 3=3
-    # 3*10 + 2 = 32
-    # 32*10 + 1 = 321
-    num1 = num1//10 # 12, 1, 0
-    count += 1
+num1 = 87654321
+reverse=0
 
-print("reverse value :", rev_val)
-print("total digits :", count)
+while num1>0:
+    temp = num1%10 #3 , 2, 1
+    reverse = reverse*10 + temp #3 , 32
+    num1 = num1 //10 #12 , 1 ,
 
+print(reverse)
 
