@@ -16,6 +16,9 @@ for num in range(1,31):
         print()
 
 
+
+
+
 print("-"* 100)
 """
 3). If else program to assign grades as per total marks.
