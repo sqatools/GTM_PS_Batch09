@@ -145,3 +145,121 @@ print("result3 :", result3)
 # result3 : Very good C++ evening Python Programming
 
 #str14.replace()
+
+
+print("_"*50)
+# #########################################
+# index() method:  This method return index position of any character or substring
+str_a = "Good MorningM"
+
+# if any character/substring is repeated multiple times, then index method will only
+# return the index position first occurrence of character/sub-string
+print("Index of M :", str_a.index("M"))
+
+# if given character/substring is not available then it will throw error
+# print("Index of P :", str_a.index("P"))
+# ValueError: substring not found
+
+
+
+print("_"*50)
+# #########################################
+# find() method: find method also return the index position of given character/substring in given
+# string, but if char/sub-string does not exist in given , then it return -1
+
+str_b = "We are Learning Python"
+print("find are :", str_b.find("are")) # find are : 3
+
+# sub-string does not exist
+print("find 'pro' in given string :", str_b.find("pro"))
+# find 'pro' in given string : -1
+
+
+
+print("_"*50)
+# #########################################
+# strip() method: This remove trailing spaces from given string, trailing spaces means space
+# in prefix and postfix position of the entire string.
+
+str_c = "  Python Programming  "
+print(str_c)
+
+result = str_c.strip()
+print("--------- result after strip -------")
+print(result) # output value will not contain any trailing spaces.
+
+
+# lstrip():  Remove left side spaces from given string.
+print(str_c.lstrip())
+#Python Programming
+
+
+# rstrip() :  This method remove right side spaces from given string.
+print(str_c.rstrip())
+#   Python Programming
+
+
+print("_"*50)
+# #########################################
+# join() method :  This method connect each character of the string with specific value
+
+str1 = "Learning"
+
+result = "_".join(str1)
+print("result :", result) # L_e_a_r_n_i_n_g
+
+str_d = "Python Programming"
+result2 = "123".join(str_d)
+print(result2) # P@y@t@h@o@n@ @P@r@o@g@r@a@m@m@i@n@g
+
+print("@".join(str_d[:4]))  # P@y@t@h
+
+
+print("_"*50)
+##########################################
+# isdigit() method: this method check the given string only contains numbers.
+
+n1 = "2345 678"
+print(n1.isdigit()) # False
+
+n2 = "54353454"
+print(n2.isdigit()) # True
+
+n3 = "Hello123"
+print(n3.isdigit()) # False
+
+# get all the numbers from given string
+str_q = "We 18 are 23 4 67 b 12 learning Python"
+word_list = str_q.split()
+print(word_list)
+for word in word_list:
+    if word.isdigit():
+        print(word)
+    else:
+        continue
+
+"""
+18
+23
+4
+67
+12
+"""
+
+print("_"*50)
+##########################################
+# isalpha() method:  This method check the given string only cotains alphabates.
+
+str_x = "Hello"
+print(str_x.isalpha()) # True
+str_y = " Python "
+
+print(str_y.isalpha()) #False
+
+
+print("_"*50)
+##########################################
+# isalnum() method:This method check the given string only contains alpha numeric values
+str_z = "Python 123"
+print("str_z:", str_z.isalnum())  # str_z: True
+
