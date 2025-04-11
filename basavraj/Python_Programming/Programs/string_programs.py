@@ -242,3 +242,109 @@ for char in str1:
         continue
 print()
 print("-"*50)
+#23). Write a Python program to get common words from strings.
+"""Input String1 = “Very Good Morning, How are You”
+Input String2 = “You are a Good student, keep it up”
+Output = “You Good are”
+"""
+str1="Very Good Morning, How are You"
+str2="You are a Good student, keep it up"
+s1=str1.split()
+s2=str2.split()
+
+for i in s1:
+    c=0
+    for j in s2:
+        if i==j:
+            c=c+1
+    if c==1:
+        print(i,end=" ")
+print()
+print("_"*50)
+#24). Write a Python program to find the smallest and largest word in a given string.
+#Input = “Learning is a part of life and we strive”
+#Output = “a”, “Learning”
+# solution in program no 7
+
+#25). Check whether the given string is a palindrome (similar) or not.
+#Input= sqatoolssqatools
+#Output= Given string is not a palindrome
+str1="sqatoolssqatools"
+str2=str1[::-1]
+if str1==str2:
+    print("string is palindrome")
+else:
+    print("string is not palindrome")
+print("_"*50)
+
+#26). Write a program using python to reverse the words in a string.
+#Input= sqatools python
+#Output= slootaqs
+s1="sqatools python"
+s2=s1.split()
+for i in s2:
+    if i==s2[0]:
+        print(i[::-1])
+print()
+print("-"*50)
+
+#27). Write a program to calculate the length of a string.
+#Input= “python”
+#Output = 6
+s1="python"
+s=0
+for i in s1:
+    s=s+1
+print(s)
+print("-"*50)
+#28). Write a program to calculate the frequency of each character in a string.
+#Input = “sqatools”
+#Output = {‘s’:2, ‘q’:1, ‘a’: 1, ‘t’:1,‘o’:2, ‘l’:1, ‘s’:1}
+s="sqatools"
+d={}
+for char in s:
+    if char in d:
+        d[char]=d[char]+1
+    else:
+        d[char]=1
+print(d)
+print("_"*50)
+
+#29). Write a program to combine two strings into one.
+str1="basav"
+str2="araja"
+def addtwostring(str1,str2):
+    res=""
+    for char in str1:
+        res=res+char
+    for char in str2:
+        res=res+char
+
+    print(res)
+str1="basav"
+str2="araja"
+addtwostring(str1,str2)
+print("_"*50)
+#30). Write a program to print characters at even places in a string.
+str1="python programming"
+for i in range(0,len(str1)-1,2):
+    print(str1[i],end=" ")
+print()
+print("-"*50)
+
+#31). Write a program to check if a string has a number or not.
+#Input = ‘python1’
+#Output = ‘Given string have a number’
+str1="pyhton123"
+flag=0
+for i in str1:
+    if i.isdigit():
+        flag=1
+        break
+
+if flag:
+    print("Given string have a number")
+else:
+    print("Given string is not have a number")
+
+print("-"*50)
