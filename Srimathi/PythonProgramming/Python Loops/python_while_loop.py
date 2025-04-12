@@ -26,15 +26,12 @@ while True:
 # without executing the remaining code.
 
 x = 1
-while (x <= 10):
+while x<=10:
     if x == 4 or x == 5:
         x += 1
         continue
-
-    else:
-
-        print(x)
-        x += 1
+    print(x)
+    x +=1
 
 """
 1
@@ -65,34 +62,3 @@ while y <=100:
 4
 
 """
-
-print("_"*50)
-# for loop with continue
-
-for i in range(1, 11): #i=1, 2, 3, 7, 8, 9, 10
-    if i > 3 and i < 7:
-        continue
-    print(i)
-
-
-print("_"*40)
-# while loop program
-# write a program to reverse a integer number.
-
-num1 = 123
-#num1 = 35789
-rev_val = 0
-count = 0
-while num1 > 0: # 12 > 0| 1 > 0 | 0 > 0
-    temp = num1%10 # 3, 2, 1
-    rev_val = rev_val*10 + temp # 3, 32
-    # 0*10 + 3=3
-    # 3*10 + 2 = 32
-    # 32*10 + 1 = 321
-    num1 = num1//10 # 12, 1, 0
-    count += 1
-
-print("reverse value :", rev_val)
-print("total digits :", count)
-
-

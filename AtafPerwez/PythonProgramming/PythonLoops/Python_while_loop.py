@@ -26,15 +26,12 @@ while True:
 # without executing the remaining code.
 
 x = 1
-while (x <= 10):
+while x<=10:
     if x == 4 or x == 5:
         x += 1
         continue
-
-    else:
-
-        print(x)
-        x += 1
+    print(x)
+    x +=1
 
 """
 1

@@ -108,23 +108,56 @@ for l in word:
 # Letters 6
 # Digits 4
 print('\n------Q9------')
+word = 'python1234'
+digits= 0
+char= 0
+
+for e in word:
+    if e.isalpha():
+        char+=1
+    elif e.isnumeric():
+        digits+=1
+
+print(f'Digits: {digits} and Characters: {char}')
+
+
 
 # 10). Python for loop program to print the alphabet pattern ‘O’ using python.
 # Output:
 #   ***
-# *       *
-# *       *
-# *       *
-# *       *
-# *       *
+# *      *
+# *      *
+# *      *
+# *      *
+# *      *
 #    ***
 print('------Q10------')
+for i in range(1, 8):
+    for j in range(1,8):
+        if i ==1 or i == 7:
+            print('*', end=" ")
+        elif j ==1 or j == 7:
+                print('*', end=" ")
+        else:
+            print(" ", end=" ")
+    print()
 
 # 11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
 print('------Q11------')
-
+n = 21
+count = 0
+while count<= n:
+    print(count, end=" ")
+    count+=1
 # 12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
-print('------Q12------')
+print('\n------Q12------')
+n = 30
+count = n
+while count !=0:
+    print(count, end=" ")
+    count -=1
+
+
 
 # 13). Python Loops program to print all alphabets from a to z using for loop
 #         Take chr method help to print characters with ASCII values
@@ -132,30 +165,72 @@ print('------Q12------')
 #         A-Z ASCII Range  65-90
 #         a-z ASCII Range  97-122
 print('------Q3------')
-
+import string
+for letter in string.ascii_lowercase:
+    print(letter, end=" ")
+print()
+for letter in string.ascii_uppercase:
+    print(letter, end=" ")
 # 14). Python Loops program to print all even numbers between 1 to 100 in python.
-print('------Q4------')
-
+print('\n------Q4------')
+for i in range(1,101):
+    if i%2==0:
+        print(i, end=" ")
 # 15). Python Loops program to print all odd numbers between 1 to 100 using python.
 print('------Q5------')
-
+for i in range(1,101):
+    if i%2 !=0:
+        print(i, end=" ")
 # 16). Python Loops program to find the sum of all natural numbers between 1 to n using python.
-print('------Q6-----')
+print('\n------Q16-----')
+n = 15
+total = 0
+for i in range(1, n+1):
+    total +=i
+    print(total, end=" ")
 
 # 17). Python program to find the sum of all even numbers between 1 to n using python.
-print('------Q17------')
+print('\n------Q17------')
+n = 20
+total = 0
+
+for i in range(1,n+1):
+    if i%2 == 0:
+        total += i
+
+print(total)
 
 # 18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
-print('------Q18------')
+print('\n------Q18------')
+n = 50
+sum = 0
+for i in range(1, n+1):
+    if n%2 != 0:
+        sum +=i
+print(f' sum of all odd no: {sum}')
 
 # 19). Write a program to count the number of digits in a number using python.
 print('------Q19------')
+digit = '12345'
+count = 0
+
+for i in digit:
+    count += 1
+    # print(type(digit))
+print(f'No of digit: {count}')
+
 
 # 20). Write a program to find the first and last digits of a number using python.
 print('------Q20------')
+num = 123456789
+number = str(num)
+print(f'first digit is: {number[0]} and  last digit is: {number[-1]}')
+
 
 # 21). Write a program to find the sum of the first and last digits of a number using python.
-#
+print('------Q20------')
+first_last = number[0] + number[-1]
+print(f'sum of first and last no is: {first_last}')
 # Solution
 # 22). Write a program to calculate the sum of digits of a number using python.
 #
