@@ -190,6 +190,19 @@ list2.append(100)
 print(list2) #[5, 6, 7, 100]
 
 
+##Tuple##
+tuple1 = (1,3.4,'Hello',[4,5,6], (3,4,5),{'a':123}, {4,5,6},True)
+print(tuple1,type(tuple1))
+"""
+Properties of Tuple
+->  Tuple is immutable data type, once it is defined can not change the values.
+->  Tuple can contain all types data, int, float, complex, str, list, tuple, dict, bool.
+->  Tuple follows positive negative indexing as like string and list.
+->  Tuple store data in with round brackets.
+->  In terms of performance, tuple is faster than list.
+"""
+
+
 
 
 

@@ -89,3 +89,51 @@ List2=[5,7,8]
 List2.append(100)
 print(List2)
 
+## Tuple Date Type ##
+tuple1=(1,3.4,"Hello",[4,5,6],(3,6),{"a":123},{4,6,8},True)
+print(tuple1, type(tuple1))
+
+# Dictionary Data Type ##
+dict2={"a":123, "b":456}
+print(dict2)
+dict2["c"]=500
+print(dict2)
+
+dict3={"a":123, "b":456, "c":600, "e":456}
+print(dict3)
+
+"""
+dict4= {
+    34:4.5,
+    55.6:"Hello",
+    "Name": "Rameez",
+    ("a","b"):[4,6,7,8],
+    True:{"p":345,"q":789, "R":3456},
+    [1,2,3]:{4,6,8,1}
+}
+print(dict4)
+"""
+dict4= {
+    34:4.5,
+    55.6:"Hello",
+    "Name": "Rameez",
+    ("a","b"):[4,6,7,8],
+    True:{"p":345,"q":789, "R":3456},
+    (1,2,3):{4,6,8,1} # Changed the list to a tuple
+}
+print(dict4)
+result=dict4.popitem()
+print(result)
+print(dict4)
+
+# Set Data type#
+set1={3,"c",7,"a","b",8,2,7,"a",9,3}
+print(set1)
+
+set2={3,5,7,"a","b",3}
+print(set2, type(set2))
+set2.add(100)
+print(set2)
+
+set3={3,5,7,"a","b",3,(3,5,7)}
+print(set3)

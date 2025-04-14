@@ -67,9 +67,42 @@ print(T1,type(T1))
 
 L1 = [1,2,3]
 L2 = ['a','b','c']
+L3 = []
 print(list(zip(L2,L1)))
 result = dict(zip(L2,L1))
 print(result,type(result))
+
+
+#List to Set
+
+s1=set(L2)
+print(s1,type(s1))
+
+#list to boolean
+B1 = bool(L3)
+B2 = bool(L1)
+print(B1,B2)
+
+#tuple to integer and float conversion not possible
+
+#tuple to string
+t1= (1,2,3,4)
+S1 = str(t1)
+print(S1,type(S1),S1[-1])
+
+#tuple to list
+l1=list(t1)
+print((l1,type(l1)))
+
+#tuple to dic not possible unless zip
+t1 = ('a','b','c')
+t2 = (1,2,3)
+t3= tuple(zip(t1,t2))
+print(t3)
+d1= dict(t3)
+print(d1,d1['a'])
+
+
 
 
 
