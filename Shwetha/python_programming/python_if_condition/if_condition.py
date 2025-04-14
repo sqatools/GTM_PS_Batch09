@@ -150,7 +150,7 @@ print()
 
 print("-" * 25)
 
-#Python program to check number is divided by 3 and 5
+
 
 num =  50
 # Check for division

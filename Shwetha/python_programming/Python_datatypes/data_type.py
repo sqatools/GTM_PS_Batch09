@@ -181,5 +181,5 @@ print(f"{word1[0]}{word1}{word1[-1]} {word2[0]}{word2}{word2[-1]}  {word3[0]}{wo
 print("_"*40)
 output3 = "olleH doog gninroM"
 # solution
-print(f"{word1[::-1]} {word2[::-1]} {word3[::-1]}")
-# olleH doog gninroM
+print(f"{word1[::-1]} {word2[::-1]} {word3[::-1]}") # olleH doog gninroM
+
