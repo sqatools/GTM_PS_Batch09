@@ -1,4 +1,1 @@
-print("hello")
-a=10
-c=7
-g=8
+#dynamic programming:

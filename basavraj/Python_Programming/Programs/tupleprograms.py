@@ -132,3 +132,56 @@ Output:
 print("program 14 doubt")
 print("-" * 50)
 
+#15). Python tuple program to create a tuple having squares of the elements from the list.
+print("program 15")
+tup = (1, 3, 5, 7, 6)
+l2 = []
+for i in list(tup):
+    b = i ** 2
+    l2.append(b)
+
+print(tuple(l2))
+print("-" * 50)
+#16# Python tuple program to multiply adjacent elements of a tuple
+print("program 16")
+tup =  (1,2,3,4)
+list1 = []
+for a,b in zip(tup,tup[1:]):
+    c = a*b
+    list1.append(c)
+tup = tuple(list1)
+print("Multiplying adjacent elements: ",tup)
+print("-"*50)
+
+#17). Python tuple program to join tuples if the initial elements of the sub-tuple are the same.
+print("program 17 doubt")
+print("_"*50)
+
+#18). Python tuple program to convert a list into a tuple and multiply each element by 2.
+print("program 18")
+l1=[12,65,34,77]
+l2=[]
+for i in l1:
+    b=i*2
+    l2.append(b)
+print(tuple(l2))
+print("_"*50)
+
+#19). Python tuple program to remove an item from a tuple.
+print("program 19")
+A=('p','y','t','h','o','n')
+t=list(A)
+print(t)
+t.remove("h")
+print(t)
+print("_"*50)
+
+#20). Python tuple program to slice a tuple.
+print("program 20")
+A=(5,7,3,4,9,0,2)
+#Output:
+#(5,7,3)
+#(3,4,9)
+print(A[:3])
+print(A[2:5])
+print("-"*50)

@@ -152,8 +152,24 @@ print(str_d[::-1])  # gnimmargorP nohtyP
 # slicing Home work
 str1 = "Hello good Morning"
 
+print("_"*40)
 output1 = "HHello good Morningg"
+#solution1
+print(f"{str1[0]}{str1}{str1[-1]}")  # HHello good Morningg
 
+print("_"*40)
 output2 = "HHelloo ggoodd MMorningg"
+# solution2
+word1 = str1[:5]
+word2 = str1[6:10]
+word3 = str1[11:]
 
-output3 = "oellH doog gorninM"
+print(f"{word1[0]}{word1}{word1[-1]} {word2[0]}{word2}{word2[-1]}  {word3[0]}{word3}{word3[-1]}")
+# HHelloo ggoodd  MMorningg
+
+###
+print("_"*40)
+output3 = "olleH doog gninroM"
+# solution
+print(f"{word1[::-1]} {word2[::-1]} {word3[::-1]}")
+# olleH doog gninroM

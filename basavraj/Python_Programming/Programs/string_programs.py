@@ -348,3 +348,161 @@ else:
     print("Given string is not have a number")
 
 print("-"*50)
+#32). Write a python program to count the number of vowels in a string.
+print("program 32")
+str1="hi basavaraja how are you"
+vowels="aeiou"
+c=0
+for char in str1:
+    if char in vowels:
+        print(char,end=" ")
+        c=c+1
+print(c)
+print("-"*50)
+#33). Write a python program to count the number of consonants in a string.
+print("program 33")
+str2="sqatools"
+vowels="aeiou"
+count=0
+for char in str2:
+    if char not in vowels:
+        print(char,end=" ")
+        count=count+1
+print("count")
+print("-"*50)
+
+#34). Write a program to print characters at odd places in a string.
+print("program 32")
+s="python programming"
+for char in range(1,len(s),2):
+    print(s[char],end=" ")
+print()
+print("-"*50)
+
+#35). Write a program to remove all duplicate characters from a given string in python.
+print("program 35")
+s1="sqatools"
+s=""
+for char in s1:
+    if char not in s:
+        s=s+char
+print(s)
+print("-"*50)
+#36). Write a program to check if a string has a special character or not
+print("program 36")
+st1='python$$#sqatools'
+s ='[@_!#$%^&*()<>?/\|}{~:]'
+c=0
+for char in st1:
+    if char in s:
+        c=c+1
+if c>0:
+    print("string has a special character")
+else:
+    print("string has no special character")
+print("-"*50)
+#37). Write a program to exchange the first and last letters of the string
+print("program 37")
+str1="We are learning python"
+str2=list(str1)
+#print(str2)
+str2[0],str2[-1]=str2[-1],str2[0]
+print("".join(str2))
+print("-"*50)
+
+#38). Write a program to convert all the characters in a string to Upper Case.
+print("program 38")
+str1=" i love india"
+res=""
+for char in str1:
+    if "a"<= char <="z":
+        res=res+chr(ord(char)-32)
+    else:
+        res=res+char
+print(res)
+print("-"*50)
+#39). Write a program to remove a new line from a string using python.
+print("program 39 doubt")
+print("-"*50)
+#40). Write a python program to split and join a string
+print("program 40")
+s1="hello world"
+s2=s1.split()
+print("-".join(s2))
+print("-"*50)
+
+#41). Write a program to print floating numbers up to 3 decimal places and convert it to string.
+print("program 41")
+s1=2.142456
+res=""
+res=res+str(round(s1,3))
+print(res)
+print("-"*50)
+#42). Write a program to convert numeric words to numbers
+print("program 42")
+st1="five four three two one"
+st2=""
+st3=st1.split()
+for word in st3:
+    if word=="five":
+        st2=st2+"5"
+    elif word=="four":
+        st2=st2+"4"
+    elif word=="three":
+        st2=st2+"3"
+    elif word=="two":
+        st2=st2+"2"
+    elif word=="one":
+        st2=st2+"1"
+print(st2)
+print("-"*50)
+#43). Write a python program to find the location of a word in a string
+print("program 43")
+st1="I am solving problems based on strings"
+st2="based"
+st3=st1.split()
+for word in range(len(st3)):
+    if st3[word]=="based":
+        print(word)
+    else:
+        continue
+print("-"*50)
+
+#44). Write a program to count occurrences of a word in a string.
+print("program 44")
+str1="i am learning python programming python"
+str2=str1.split()
+str3="python"
+c=0
+for word in str2:
+    if word=="python":
+        c=c+1
+print("number of occurence of python is :",c)
+print("-"*50)
+#46). Find the words greater than the given length.
+print("program 46")
+str1="hi basu how are you doing"
+str3=str1.split()
+for word in str3:
+    if len(word)>3:
+        print(word,end=" ")
+print()
+print("-"*50)
+#47). Write a program to get the first 4 characters of a string.
+print("program 47")
+s="basavaraja"
+print(s[:5])
+print("-"*50)
+#48). Write a Python program to get a string made of the first 2 and the last 2 chars from a given string.
+print("program 48")
+s1="basavaraja"
+print(s1[:2]+s1[-2:])
+print("-"*50)
+#49). Write a python program to print the mirror image of the string.
+print("program 49")
+string="basavaraja"
+res=""
+for i in range(len(string)-1,-1,-1):
+    res=res+string[i]
+print(res)
+print("-"*50)
