@@ -581,3 +581,4 @@ Output = Science
 # Input: ‘jaj’
 # output = palindrome
 
+print()
