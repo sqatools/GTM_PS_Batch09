@@ -202,15 +202,35 @@ print(total)
 
 # 18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
 print('\n------Q18------')
+n = 50
+sum = 0
+for i in range(1, n+1):
+    if n%2 != 0:
+        sum +=i
+print(f' sum of all odd no: {sum}')
 
 # 19). Write a program to count the number of digits in a number using python.
 print('------Q19------')
+digit = '12345'
+count = 0
+
+for i in digit:
+    count += 1
+    # print(type(digit))
+print(f'No of digit: {count}')
+
 
 # 20). Write a program to find the first and last digits of a number using python.
 print('------Q20------')
+num = 123456789
+number = str(num)
+print(f'first digit is: {number[0]} and  last digit is: {number[-1]}')
+
 
 # 21). Write a program to find the sum of the first and last digits of a number using python.
-#
+print('------Q20------')
+first_last = number[0] + number[-1]
+print(f'sum of first and last no is: {first_last}')
 # Solution
 # 22). Write a program to calculate the sum of digits of a number using python.
 #
