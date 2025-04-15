@@ -292,6 +292,12 @@ Input:
 Output = 63
 
 Solution
+n1 = 25
+n2 = 63
+if n1 > n2:
+    print("Largest of two numbers = ", n1)
+else:
+    print("Largest of two numbers = ", n2)
 """
 """
 num1 = int(input("Enter first number = "))

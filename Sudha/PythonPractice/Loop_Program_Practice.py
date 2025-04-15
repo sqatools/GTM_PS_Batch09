@@ -250,23 +250,106 @@ Total number of digits in given number =  4
 
 """
 20). Write a program to find the first and last digits of a number using python.
+
+Solution 20
+num1 = input("please enter the number = ")
+length = int(len(num1))
+print(length)
+print(num1[0], num1[length-1])
+
+20.output
+please enter the number = 1234567
+7
+1 7
+
+"""
+"""
+21). Write a program to find the sum of the first and last digits of a number using python.
+
+21.Solution method 1
+
+num1 = input("please enter the number = ")
+length = int(len(num1))
+print("First digit of the number = ", num1[0], " \n Second digit of the number = ", num1[length - 1], "\n Sum of "
+                                                                                                      "those two "
+                                                                                                      "number = ",
+      int(num1[0]) + int(num1[length - 1]))
+
+21.output
+please enter the number = 123
+First digit of the number =  1  
+ Second digit of the number =  3 
+ Sum of those two number =  4
+"""
+"""
+21. solution method 2
+num1 = int(input("Please enter the number = "))
+str1 = str(num1)
+total = 0
+for i in range(len(str1)):
+    if i == 0:
+        total += int(str1[i])
+    elif i == len(str1)-1:
+        total += int(str1[i])
+
+print("Sum of two number = ", total)
+21.output
+Please enter the number = 123456
+Sum of two number =  7
+
 """
 
 """
-21). Python program to check whether the given number is positive or negative and even or odd.
-Input = 26
-Output = The given number is positive and even
+22). Write a program to calculate the sum of digits of a number using python.
+
+num1 = int(input("Please enter the number = "))
+str1 = str(num1)
+total = 0
+for i in range(len(str1)):
+    total = total+int(str1[i])
+
+print(total)
+
+22.output
+Please enter the number = 256
+13
+"""
+"""
+23). Write a program to calculate the product of digits of a number using python.
+
+num1 = int(input("Please enter the number = "))
+str1 = str(num1)
+total = 1
+for i in range(len(str1)):
+    total = total * int(str1[i])
+
+print(total)
+23.output
+Please enter the number = 34
+12
+"""
+"""
+23.solution method two
+num1 = int(input("Please enter the number = "))
+product = 1
+while num1 > 0:
+    rem = num1 % 10
+    product = product * rem
+    num1 = num1 // 10
+
+print(product)
+
+output
+Please enter the number = 34
+12
 """
 
-n = 26
-if n >= 0:
-    if n % 2 == 0:
-        print("The number is positive and even")
-    else:
-        print("The number is Positive and odd")
-else:
-    if n % 2 == 0:
-        print("The number is negative and even")
-    else:
-        print("The number is negative and odd")
+"""
+24).Python loops program to enter a number and print its reverse using python.
+"""
+num1 = int(input("Please enter the number = "))
+rev_Val = 0
+while num1 > 0:
+    temp = num1 % 10
+    rev_Val = rev_Val*10 + temp
 
