@@ -33,7 +33,59 @@ for word in word_list: # RAM SHYAM MOHAN SHYAM RAM RAHUL
         continue
 
 print("result :", result)
+
 # result : RAM SHYAM MOHAN RAHUL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 print("_"*50)

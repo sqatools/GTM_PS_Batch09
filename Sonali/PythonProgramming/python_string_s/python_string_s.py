@@ -38,4 +38,56 @@ word3=str1[11:]  #from m to g in morning
 print(f"{word1[-1:-6:-1]} {word2[::-1]} {word3[::-1]}") # between hello and good and morning the space is defined if we give space between {}
 
 
+#get all the numbers from a given string
+str1="i am 23 learing python 34 56 78 90"
+w_li=str1.split()
+print(w_li)
+for word in w_li:
+    if word.isdigit():
+        print(word)
+    else:
+        continue
+
+
+
+print("-"*50)
+n="I am learning python programming"
+long_len=0
+long_word=''
+word_list=n.split()
+for word in word_list:
+    word_len=len(word)
+    if word_len>long_len:
+        long_len=word_len    #word length assigned to long_len
+        long_word=word
+    else:
+        continue
+print(long_word,long_len)
+
+print("-"*50)
+#====================================
+
+
+#There should not be any duplicate in the string
+
+str3="sonali ram shyam RAM SONALI"
+result=" "
+word_list2=str3.split()
+print(word_list2)
+for word in word_list2:
+    if word not in result:
+        result=result+word+" "
+    else:
+        continue
+print(result)     # it will print the words as case sensitive
+
+#
+
+
+
+
+
+
+
+
 
