@@ -201,3 +201,33 @@ for i in range(1, 7):
             else:
                 print(" ", end=" ")
     print()
+
+
+
+print("_"*50)
+
+"""
+    *     # i=1, j = 3 
+  * * *   # i=2, j = 2, 3, 4
+* * * * * # i=3, j = 1 to 5 
+  * * *   # i=4, j = 2, 3, 4
+    *     # i=5, j = 3 
+"""
+
+for i in range(1, 6):
+    for j in range(1, 6):
+        if i == 1 or i == 5:
+            if j ==3:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        elif i == 2 or i ==4:
+            if j in [2, 3, 4]:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        elif i == 3:
+            print("*", end=" ")
+
+    print()
+
