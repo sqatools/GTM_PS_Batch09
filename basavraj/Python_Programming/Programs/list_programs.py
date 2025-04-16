@@ -219,4 +219,10 @@ for i in lst:
 print()
 print("-"*50)
 
+#21). Python program to print the current date in the given format
+
+import datetime
+date = datetime.datetime.now()
+
+print (date.strftime (" %Y %b %d "))
 
