@@ -60,28 +60,7 @@
 # programing_class2 = f"her name is {student} and she is learning {program} her class starts at {class_time} and total numbers of students in her class is {no_of_students}"
 # print(programing_class2)
 
-############## string slicing ####################
-# Rule 1: str[start index: end index]
-"""
-->  Output will contains result from left to right.
-->  Output value will include start index and exclude the end index.
-->  if we don't defined the start index, then default start index is 0 e.g. str[:end index]
-->   if we don't defined the end index, then default end index would be end of the string.
-     e.g. str[start index:]
-->
-"""
-name = "Harveer"
-print(name[3:7])# this will print veer
 
-print(name[:-4])# this will print Har
-
-print(name[:2])# this will print Ha
-
-print(name[4:])
-
-print(name[-2:-2])
-
-pr
 
 
 
