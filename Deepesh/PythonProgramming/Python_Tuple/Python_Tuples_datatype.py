@@ -135,7 +135,7 @@ print(square) # (25, 49, 81, 4, 16)
 # (25, 49, 81, 4, 16)
 
 # Home work
-# tuple comprehension: need to practice.
+# tuple comprehension: need to practice.py.
 # 1. tuple comp with if condition
 # 2. tuple comp with if and else condition.
 # 3  tuple comp with nested loop.

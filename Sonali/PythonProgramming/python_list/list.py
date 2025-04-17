@@ -105,6 +105,22 @@ list_x = ['hello', 'Python', 'Apple', 'Mango']
 print(sorted(list_x))
 print(sorted(list_x,reverse=True))
 
+#list comprehesion
+result10=[x for x in list_w if x%2==0]
+print(result10)
+
+
+list99 = [5, 7, 9, 12, 6]
+#output = [(5, 'odd'), (7, 'odd'), (9, 'odd'), (12, 'even'), (6, 'even')]
+
+result9=[(val,'even')  if val%2==0 else (val,'odd') for val in list99]
+print(result9)
+
+#nested loop condition
+
+result11=[(x,y) for x in ['a','b','c'] for y in ['p','q']]
+print(result11)
+
 
 
 

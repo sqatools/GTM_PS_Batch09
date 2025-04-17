@@ -351,7 +351,7 @@ print("Min value :", min(list_r))
 print("Sum of values :", sum(list_r))
 # Sum of values : 210
 
-print("_"*50)
+ print("_"*50)
 ######################### List Comprehension ####################
 
 list_u = [6, 8, 2, 5, 7, 9, 12, 13]
