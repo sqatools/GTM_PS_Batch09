@@ -1,4 +1,4 @@
-# My python practice file, question taken from https://sqatools.in/python-basic-programs/
+# My python practice.py file, question taken from https://sqatools.in/python-basic-programs/
 ################
 
 
