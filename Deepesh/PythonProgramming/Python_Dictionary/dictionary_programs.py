@@ -17,7 +17,7 @@ print("output :", result)
 print("_"*50)
 ##############################
 # 2 : write a python program to calculate total bill as per purchase items.
-# part1 :  caculate bill
+# part1 :  calculate bill
 # part2 :  update inventory
 
 fruit_inventory = {'Apple': 500, 'Mango': 200, 'Banana': 300, 'Lichi': 1000}
