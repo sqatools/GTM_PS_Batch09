@@ -52,3 +52,13 @@ employee_list = [
     {'Name': 'rahul', 'exp': 15, 'age': 30, 'salary': 500000}
 ]
 
+
+for data in employee_list:
+    if data['exp'] <= 5:
+        cur_salary = data['salary']
+        update_salary = cur_salary*(20/100) + cur_salary
+        print(update_salary)
+        data['salary'] = update_salary
+
+
+print(employee_list)
