@@ -147,45 +147,82 @@ print(words[-1::-1])
 
 
 # 16). Write a python program to get all the digits from the given string.
-# Input = “””
-# Sinak’s 1112 aim is to 1773 create a new generation of people who
-# understand 444 that an organization’s 5324 success or failure is
-# based on 555 leadership excellence and not managerial
-# acumen
-# “””
+print("---------16--------")
+str16 = 'Sinaks 1112 aim is to 1773 create a new generation of people who understand 444 that an organizations 5324 success or failure is based on 555 leadership excellence and not managerial acumen'
 # Output = [1112, 5324, 1773, 5324, 555]
+
+digit = []
+char = []
+words =str16.split()
+# print(words)
+for word in words:
+    if word.isalpha():
+        char.append(word)
+    else:
+        digit.append(word)
+print(f'char= {char}')
+print(f'digit= {digit}')
+
 
 
 # 17). Write a python program to replace the words “Java” with “Python” in the given string.
 # Input = “JAVA is the Best Programming Language in the Market”
 # Output = “Python is the Best Programming Language in the Market”
+print('-------17-------')
+str17 = " JAVA is the best programming language in the market"
+str17= str17.replace('JAVA', 'Python')
+print(str17)
+
 
 
 # 18). Write a Python program to get all the palindrome words from the string.
 # Input = “Python efe language aakaa hellolleh”
 # output = [“efe”, “aakaa”, “hellolleh”]
-
+print('-----------18----------')
+str18= 'Python efe language aakaa hellolleh'
+words= str18.split(" ")
+palindrome= []
+for word in words:
+    if word[::-1] == word:
+        palindrome.append(word)
+    else:
+        continue
+print(palindrome)
 
 
 # 19). Write a Python program to create a string with a given list of words.
 # Input = [“There”, “are”, “Many”, “Programming”, “Language”]
 # Output = There are many programming languages.
-
-
+list19 = ['there', 'are', 'many', 'programming', 'language']
+str19 = " ".join(list19)
+print(str19)
 
 # 20). Write a Python program to remove duplicate words from the string.
 # Input = “John jany sabi row john sabi”
 # output = “John jany sabi row”
+str20 = 'John jany sabi row John sabi'
+words = str20.split(" ")
+temp = []
+for wor in words:
+    if wor not in temp:
+        temp.append(wor)
+
+print(temp)
 
 
 
 # 21). Write a Python to remove unwanted characters from the given string.
 # Input = “Prog^ra*m#ming”
 # Output = “Programming”
-#
+print('-----------21--------')
+str21 = 'Prog^ra*m#ming'
+result = ''.join(letter for letter in str21 if letter.isalnum())
+print(result)
 # Input = “Py(th)#@&on Pro$*#gram”
 # Output = “PythonProgram”
-#
+str22 = 'PythonProgram'
+result = ''.join(letter for letter in str22 if letter.isalnum())
+print(result)
 # Solution
 # 22). Write a Python program to find the longest capital letter word from the string.
 # Input = “Learning PYTHON programming is FUN”
