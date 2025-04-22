@@ -139,6 +139,19 @@ for i in my_str.split():
     else:
         continue
 
+# isalpha() method:  This method check the given string only cotains alphabates.
+
+country = "America"
+print(country.isalpha())
+
+print("_"*50)
+##########################################
+# isalnum() method:This method check the given string only contains alpha numeric values
+
+user_name = "watch123"
+print(user_name.isalnum())
+
+
 
 
 
