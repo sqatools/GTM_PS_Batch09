@@ -204,3 +204,62 @@ print("set_p :", set_q) # {55, 6, 7, 8, 22, 88, 77}
 
 set_p.symmetric_difference_update(set_q)
 print("set_p :", set_p)  # {2, 11, 44, 77, 22, 55, 88}
+
+
+print("_"*50)
+#####################################
+# superset() and subset()
+set_x = {5, 7, 9, 2, 6, 17}
+set_y = {2, 9, 7}
+set_z = {6, 17, 20}
+
+print("set x is superset of set_y :", set_x.issuperset(set_y)) # True
+print("set y is subset of set_x :", set_y.issubset(set_x)) # True
+print("set x is superset of set_z :", set_x.issuperset(set_z)) # False
+print("set z is subset of set_x :", set_z.issubset(set_x)) # False
+
+print("_"*50)
+#####################################
+# copy() method :
+
+# shallow copy : In the shallow copy concept, if pass reference of set to another, if we will modification
+#                in any of the set, then it is called shallow copy.
+set_p1 = {5, 7, 9, 2, 6, 17}
+set_q1 = set_p1
+set_q1.add(100)
+
+print("set_q1 :", set_q1)
+# set_q1 : {17, 2, 100, 5, 6, 7, 9}
+
+print("set_p1 :", set_p1)
+# set_p1 : {17, 2, 100, 5, 6, 7, 9}
+
+print("_"*50)
+# Deep Copy : In deep copy , we have to use copy method explicitly then all data from one set will copy another set
+# if will any update in any of set, then changes will not in each other sets.
+
+set_A = {5, 7, 9, 2, 6, 17}
+set_B = set_A.copy()
+set_B.add(500)
+set_A.add(100)
+
+print("Set_A :", set_A)  # {17, 2, 100, 5, 6, 7, 9}
+print("set_B :", set_B)  # {17, 2, 500, 5, 6, 7, 9}
+
+
+print(dir(set))
+
+
+print("_"*50)
+################ frozenset #################
+# frozenset :  frozen mantain the property of set and well as well, it is immutable as a property.
+list1 = ['Apple', 'Mango', 'Banana', 'Apple', 'Lichi', 'apple']
+result = frozenset(list1)
+print("result :", result)
+# frozenset({'Apple', 'Mango', 'Banana', 'apple', 'Lichi'})
+# result[1] = 500
+# TypeError: 'frozenset' object does not support item assignment
+
+
+
+
