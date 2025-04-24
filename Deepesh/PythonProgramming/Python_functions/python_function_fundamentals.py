@@ -177,3 +177,4 @@ print(output2)
 # Home work
 # Q1 write a python function to get factorial any given number with return statement
 # Q2 write a python function to get list of all the prime number from 1 to 100
+
