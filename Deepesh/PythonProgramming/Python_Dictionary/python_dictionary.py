@@ -208,7 +208,7 @@ print("dictz:", dict_z)
 # {'a': 123, 'b': 567, 'c': 132, 'd': 456, 'e': 700, 'f': 500}
 
 # get existing key data from dictionary
-result2 = dict_z.setdefault('c', 600)
+result2 = dict_z.setdefau]lt('c', 600)
 print("existing value of c :", result2) # 132
 print("dictz:", dict_z)
 # {'a': 123, 'b': 567, 'c': 132, 'd': 456, 'e': 700, 'f': 500}
