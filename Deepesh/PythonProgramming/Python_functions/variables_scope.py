@@ -62,5 +62,5 @@ def outer_function():
     inner_fun1()
     inner_fun2()
 
-outer_function()
+#outer_function()
 #print(var_y)
