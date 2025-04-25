@@ -94,12 +94,23 @@ emp_dict = {
         {'emp_id': 'ADMIN_02', 'name': 'shyam', 'surname': 'gupta', 'mobile': 542432423, 'email': 'shyam@gmail.com'}
 
     ],
-    'Sells' : [],
-    'Marketing' : [],
-    'Engineering' : []
+    'Sells' : [
+        {'emp_id': 'Sells_01', 'name': 'mohan1', 'surname': 'doe', 'mobile': 5434545, 'email': 'mohan@gmail.com'},
+        {'emp_id': 'Sells_02', 'name': 'shyam1', 'surname': 'gupta', 'mobile': 542432423, 'email': 'shyam@gmail.com'}
+    ],
 }
 
-input = 'IT_02'
-print("IT_02")
+#input = 'IT_02'
+#print("IT_02")
+print(emp_dict['Sells'][1]['name'])
 
+emp_id = 'Sells_01'
+print("_"*50)
+for k1, v1 in emp_dict.items():
+    #print(k1, "|||", v1)
+    for data in v1:
+        #print(data)
+        for k2, v2 in data.items():
+            if emp_id == v2:
+                print(data)
 
