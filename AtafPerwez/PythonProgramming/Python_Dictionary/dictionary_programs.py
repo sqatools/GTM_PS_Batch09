@@ -35,7 +35,6 @@ for fruit, price in fruit_price.items():
     print(fruit_name, "\t\t", fruit_price, "\t\t", fruit_no, "\t\t", fruit_bill)
     total_bill = total_bill + fruit_bill
 
-
 print("_"*40)
 print("Total bill :", total_bill)
 
@@ -51,4 +50,56 @@ employee_list = [
     {'Name': 'Jenny', 'exp': 10, 'age': 45, 'salary': 1000000},
     {'Name': 'rahul', 'exp': 15, 'age': 30, 'salary': 500000}
 ]
+
+
+
+for data in employee_list:
+    print(data)
+    user_experience = data['exp']
+    if user_experience <= 5:
+        cur_salary = data['salary']
+        update_salary = cur_salary*(20/100) + cur_salary
+        print(update_salary)
+        data['salary'] = int(update_salary)
+
+    elif user_experience >5 and user_experience <= 10:
+        cur_salary = data['salary']
+        update_salary = cur_salary*(7/100) + cur_salary
+        print(update_salary)
+        data['salary'] = int(update_salary)
+
+    elif user_experience >= 10 and user_experience <= 15:
+        cur_salary = data['salary']
+        update_salary = cur_salary*(10/100) + cur_salary
+        print(update_salary)
+        data['salary'] = int(update_salary)
+
+    else:
+        continue
+
+    print("Updated data :", data)
+
+
+print(employee_list)
+
+
+# write a python program to show employee details from given dictionary
+emp_dict = {
+    'IT': [
+        {'emp_id': 'IT_01', 'name': 'john', 'surname': 'doe', 'mobile': 5434545, 'email': 'john@gmail.com'},
+        {'emp_id': 'IT_02', 'name': 'Rahul', 'surname': 'gupta', 'mobile': 542432423, 'email': 'rahul@gmail.com'}
+    ],
+    'ADMIN' : [
+        {'emp_id': 'ADMIN_01', 'name': 'mohan', 'surname': 'doe', 'mobile': 5434545, 'email': 'mohan@gmail.com'},
+        {'emp_id': 'ADMIN_02', 'name': 'shyam', 'surname': 'gupta', 'mobile': 542432423, 'email': 'shyam@gmail.com'}
+
+    ],
+    'Sells' : [],
+    'Marketing' : [],
+    'Engineering' : []
+}
+
+input = 'IT_02'
+print("IT_02")
+################
 
