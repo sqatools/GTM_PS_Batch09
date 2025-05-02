@@ -15,7 +15,34 @@ def read_excel_data(filepath, sheet_name, cell_name):
 # for i in range(1, 6):
 #     read_excel_data("test_data.xlsx", "Sheet1", f"A{i}")
 
+# Read three value from first colum or each sheet
+"""
+for i in range(1, 6):
+    print(f"sheet name :Sheet{i}", )
+    for j in range(1, 4):
 
+         read_excel_data("test_data.xlsx", f"Sheet{i}", f"A{j}")
+
+    print("_"*50)
+"""
+# Write a program to read first value for each 5 colum from each sheet.
+
+for i in range(1, 6):
+    print(f"sheet name :Sheet{i}", )
+    for j in ['A', 'B', 'C', 'D', 'E']:
+
+         read_excel_data("test_data.xlsx", f"Sheet{i}", f"{j}1")
+         read_excel_data("test_data.xlsx", f"Sheet{i}", f"{j}2")
+
+    print("_"*50)
+
+
+
+# for i in range(1, 6):
+#     for j in range(1, 4):
+#          read_excel_data("test_data.xlsx", f"Sheet{i}", f"A{j}")
+#
+#     print("_"*50)
 
 # write content to excel sheet
 def write_excel_data(filename, sheet_name, cell_name, cell_val):
@@ -28,7 +55,7 @@ def write_excel_data(filename, sheet_name, cell_name, cell_val):
 
 #write_excel_data("test_data.xlsx", "Sheet3", "A1", "Indore")
 # replace exiting data with blank.
-write_excel_data("test_data.xlsx", "Sheet3", "A1", "")
+#write_excel_data("test_data.xlsx", "Sheet3", "A1", "")
 # read all data of specific sheet
 
 
