@@ -13,13 +13,13 @@ def file_read(file_path):
      data=file.read()
      print(data)
      file.close()
-file_read('read_data.txt')
+file_read('read_data1.txt')
 
 
 print("*"*60)
 
 #method-2 (without function)
-file=open('read_data.txt','r') #open the file
+file=open('read_data1.txt', 'r') #open the file
 data=file.read()               #read the file
 print(data)                    #print data
 file.close()                   #close the file
@@ -31,7 +31,7 @@ file.close()                   #close the file
 #method-1:(without function)
 data="This is new line"
 
-file=open('read_data.txt','w')
+file=open('read_data1.txt', 'w')
 file.write(data)
 print(file)
 file.close()
