@@ -103,7 +103,7 @@ def read_byte_data(filepath, no_bytes):
 # Harshal Patel to Bre
 
 print("_"*50)
-# 2. read line from file : file.readline():  readline method return one single line output
+# 2. read  line from file : file.readline():  readline method return one single line output
 def read_line_data(filepath, no_lines):
     with open(filepath, "r") as file:
         for _ in range(no_lines):

@@ -108,7 +108,7 @@ employee_list = [
     {'Name': 'rahul', 'exp': 15, 'age': 30, 'salary': 500000}
 ]
 
-
+print("*"*60)
 #increment=0
 for data in employee_list:
 
@@ -132,6 +132,129 @@ for data in employee_list:
     else:
         print("NO hike")
 print(employee_list)
+print("*"*60)
+
+# write a python program to show employee details from given dictionary
+emp_dict = {
+    'IT': [
+        {'emp_id': 'IT_01', 'name': 'john', 'surname': 'doe', 'mobile': 5434545, 'email': 'john@gmail.com'},
+        {'emp_id': 'IT_02', 'name': 'Rahul', 'surname': 'gupta', 'mobile': 542432423, 'email': 'rahul@gmail.com'}
+    ],
+    'ADMIN' : [
+        {'emp_id': 'ADMIN_01', 'name': 'mohan', 'surname': 'doe', 'mobile': 5434545, 'email': 'mohan@gmail.com'},
+        {'emp_id': 'ADMIN_02', 'name': 'shyam', 'surname': 'gupta', 'mobile': 542432423, 'email': 'shyam@gmail.com'}
+
+    ],
+    'Sells' : [
+        {'emp_id': 'Sells_01', 'name': 'mohan1', 'surname': 'doe', 'mobile': 5434545, 'email': 'mohan@gmail.com'},
+        {'emp_id': 'Sells_02', 'name': 'shyam1', 'surname': 'gupta', 'mobile': 542432423, 'email': 'shyam@gmail.com'}
+    ],
+}
+
+#method-1----------------single line printing
+print(emp_dict['IT'][1]['emp_id'])
+'''
+Explanation:
+emp_dict=dict[list{dict}]
+it is in this format
+emp_dict['IT']----------IT WILL print the full dictionary
+then inside it list is there. so print the list by its indexing so [0]
+then again inside list again dictionary is there
+then we will get the value by keys
+
+'''
+print("*"*60)
+#method-2-----------use the loop
+emp_id='IT_02'
+for k1,v1 in emp_dict.items():    # here key and value in dictionary
+    for data in v1:               #here it is list means data which is dictionary in v1 which is list
+        for k2,v2 in data.items(): # here key and value in data which is dictionary
+            if emp_id==v2:      #if emp_id is defined value then print
+                print(data)
+
+
+
+
+print("*"*60)
+#python programm to add data to dictionary
+dict1={}
+dict1["name"]="ramesh"
+dict1["age"]=98
+print(dict1)
+print("*"*60)
+#Python Dictionary program to print the square of all values in a dictionary.
+dict2 = {'a': 5, 'b':3, 'c': 6, 'd' : 8}
+for k in dict2:
+    print(k, ":", dict2[k] ** 2)
+
+print("*"*60)
+#move value of 1 dictionary to another dictionary
+dict77 = {'name': 'john', 'city': 'Landon', 'country': 'UK'}
+dict70 = {}
+dict70=dict77.copy()
+print(dict70)
+print("*"*60)
+#update value
+dict11 = {'Name':'Harry','Rollno':345,'Address':'Jordan'}
+dict22 = {'Age':25,'salary': '$25k'}
+dict22.update(dict11)
+print(dict22)
+
+print("*"*60)
+# Python Dictionary program to get a list of odd and even keys from the dictionary.
+dict67 ={1: 25, 5:'abc', 8:'pqr', 21:'xyz', 12:'def', 2:'utv'}
+list1=[]
+list2=[]
+for k in dict67:
+    if k%2==0:
+        list1=[k, dict67[k]]
+        print("even is:",list1)
+
+    elif k%2!=0:
+        list2=[k,dict67[k]]
+        print("odd is:", list2)
+
+
+#above need to chk as it is not printing in single line
+
+'''
+Python Dictionary Program to create a dictionary from two lists.
+Input :
+list1 = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’]|
+list2 = [12, 23, 24, 25, 15, 16]
+Output :
+{‘a’: 12, ‘b’: 23, ‘c’: 24, ‘d’: 25, ‘e’: 15}
+'''
+list1 = ['a', 'b', 'c', 'd', 'e']
+list2 = [12, 23, 24, 25, 15, 16]
+dict999={}
+dict999=dict(zip(list1,list2))
+print(dict999)
+
+#Python Dictionary program to store squares of even and cubes of odd numbers in a dictionary using dictionary comprehension.
+list1 = [4, 5, 6, 2, 1, 7, 11]
+dict1 = {}
+for i in list1:
+    if i%2==0:
+        dict1[i]=i**2
+    elif i%2!=0:
+        dict1[i]=i**3
+print(dict1)
+
+
+
+#Python Dictionary program to create a dictionary from the string.
+input1 = 'SQATools'
+#Output = {'S': 1, 'Q': 1, 'A': 1, 'T': 1, 'o': 2, 'l': 1, 's': 1}
+dict45={}
+for char in input1:
+    dict45[char]= input1.count(char) #count is used to count the number of char
+print(dict45)
+
+
+
+
+
 
 
 

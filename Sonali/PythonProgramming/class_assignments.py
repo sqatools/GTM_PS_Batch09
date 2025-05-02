@@ -37,13 +37,7 @@ emp_dict = {
 for data in emp_dict:
     for key,val in emp_dict.items():
 
-        if key=={'emp_id'}:
-            val='A'['emp_id': 'IT_02']
-            print(val)
-        else:
-            continue
 
-print(emp_dict)
 
 
 
