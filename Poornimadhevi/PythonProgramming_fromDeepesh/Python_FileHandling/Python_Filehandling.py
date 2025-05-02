@@ -12,7 +12,7 @@ def read_file(file_path):
     file.close()
 
 # read file from current location
-# read_file("read_data.txt")
+# read_file("read_data1.txt")
 
 # Read file from specific location
 #read_file(r"E:\Filesdata\count_name.txt")

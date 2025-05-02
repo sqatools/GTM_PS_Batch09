@@ -1,10 +1,10 @@
 """for file handlin tere are tree type of file open
-read_data.txt mode(r):
+read_data1.txt mode(r):
 write mode(w):
 append mode(a):
 
 """
-#read_data.txt the file mode
+#read_data1.txt the file mode
 def read_file(file_path):
     file=open(file_path,'r')
     data=file.read()
