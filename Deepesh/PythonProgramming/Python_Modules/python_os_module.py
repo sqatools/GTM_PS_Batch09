@@ -1,4 +1,5 @@
 import os
+import shutil
 
 # get current working directory
 print(os.curdir) # .
@@ -84,4 +85,42 @@ print(files_list)
 print("folder count :", len(folder_list))
 print(folder_list)
 
+print("_"*50)
+######################
+# Copy content from one location to another.
 
+file1 = r"E:\Filesdata\count_name.txt"
+tar_path = r"E:\Filesdata\batch09\count_name.txt"
+
+tar_path2 = r"E:\Filesdata\batch09\count_name_copy.txt"
+
+# copy with file same file name
+shutil.copy(file1, tar_path)
+
+# copy with updated file name
+shutil.copy(file1, tar_path2)
+
+
+print("_"*50)
+######################### get size of the file ################
+filepath = r"E:\Filesdata\batch09\count_name.txt"
+# get size of file
+filesize = os.path.getsize(filepath)
+print("file size in byte :", filesize) # 980
+
+############# file creation time ####
+print("creation time of file:",os.path.getctime(filepath))
+ #1746456121.2066696  #  Monday, May 5, 2025 8:12:01.206 PM GMT+05:30
+
+####### get cpu_count of your system ########
+print("current CPU count :", os.cpu_count()) #  8
+
+
+print("_"*50)
+############ Run windows command throught python #####
+os.system("control")  # open control panel
+os.system("appwiz.cpl")  # open program features.
+os.system("notepad")   # open notepad.
+
+# run python file with os.system.
+os.system("python sample_script.py")
