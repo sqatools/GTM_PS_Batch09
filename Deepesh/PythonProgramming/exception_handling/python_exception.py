@@ -97,3 +97,30 @@ unsupported operand type(s) for +: 'int' and 'str'
 Addition of the number and string is not allowed
 Factorial value : 720
 """
+
+print("_"*50)
+################################################
+# multiple exception handling:
+
+
+def try_except_multiple_exception_handling(v1, v2, v3):
+    try:
+
+        add = v1 + v2
+        print("Adding value :", add)
+
+        divide = v1//v3
+        print("divide value :", divide)
+
+        assert v1+v2 == v3
+    except TypeError:
+        print("Addition of string and int is not allowed")
+    except ZeroDivisionError:
+        print("Can not divide number with zero")
+    except AssertionError:
+        print("addition of value are not equal to third value")
+    except Exception as e:
+        raise e
+
+
+try_except_multiple_exception_handling(20, 30 , 70)
