@@ -80,7 +80,7 @@ def read_all_data(file_path, sheet_name):
 
 print("_"*50)
 
-#read_all_data("test_data.xlsx", "Sheet4")
+read_all_data("test_data.xlsx", "Sheet4")
 
 # Home Work
 # write a python program to read first three cell of 5 different sheet.
