@@ -1,0 +1,14 @@
+
+1.Explaine oobs concept user1@gmail.com
+2.What is microservices
+3.What is container ram@yahoo.com
+4.Differenace bet hasmap hashtable and conccurent hashmap
+5.Difference between @restcontroller and @controller
+6.Explaine archetechure of microservics sonali12@facebook.com
+7.What is methodoverloading and methodoverriding
+8.What is use of @springapplication
+9.Object method in java
+10.Class loader
+11.What is conccurenthasmap
+12.How to skip finally block
+13. what is python
