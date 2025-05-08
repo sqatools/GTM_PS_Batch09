@@ -12,7 +12,7 @@ def read_file(file_path):
     file.close()
 
 # read file from current location
-# read_file("read_data.txt")
+# read_file("read_data1.txt")
 
 # Read file from specific location
 #read_file(r"E:\Filesdata\count_name.txt")
@@ -83,7 +83,7 @@ def read_file_content(filepath):
 
     print("is file closed : outside of context manger:", file.closed) # True
 
-#read_file_content("read_data.txt")
+#read_file_content("read_data1.txt")
 
 
 print("_"*50)
@@ -99,7 +99,7 @@ def read_byte_data(filepath, no_bytes):
         print(data)
 
 
-# read_byte_data("read_data.txt", 20)
+# read_byte_data("read_data1.txt", 20)
 # Harshal Patel to Bre
 
 print("_"*50)
@@ -109,7 +109,7 @@ def read_line_data(filepath, no_lines):
         for _ in range(no_lines):
             print(file.readline(), end="")
 
-#read_line_data("read_data.txt", 4)
+#read_line_data("read_data1.txt", 4)
 
 
 print("_"*50)
@@ -128,7 +128,7 @@ def read_lines_list(filepath):
             print(val)
 
 
-#read_lines_list("read_data.txt")
+#read_lines_list("read_data1.txt")
 
 def read_specific_no_lines(filepath, lines_no):
     with open(filepath, "r") as file:
@@ -175,7 +175,7 @@ def read_byte_data_with_tell(filepath, no_bytes):
         print(data)
         print("after reading value cursor position :", file.tell())
 
-#read_byte_data_with_tell("read_data.txt", 25)
+#read_byte_data_with_tell("read_data1.txt", 25)
 
 
 print("_"*50)
