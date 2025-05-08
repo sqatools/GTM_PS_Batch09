@@ -91,7 +91,7 @@ Factorial value : 720
 """
 
 # execute code with exception
-try_except_else_finally_handling(20, 's', 6)
+#try_except_else_finally_handling(20, 's', 6)
 """
 unsupported operand type(s) for +: 'int' and 'str'
 Addition of the number and string is not allowed
@@ -123,4 +123,80 @@ def try_except_multiple_exception_handling(v1, v2, v3):
         raise e
 
 
-try_except_multiple_exception_handling(20, 30 , 70)
+#try_except_multiple_exception_handling(20, 30 , 70)
+
+
+def nested_level_exception(n1, n2, n3):
+    # Outer exception handling
+    try:
+        add = n1+n2
+        print("addition :", add)
+        # Inner exception handling
+        try :
+            divide = n2//n3
+            print("division output :", divide)
+
+        except Exception as f:
+            print(f)
+            print("Inner exception :Can not divide number with zero")
+
+    except Exception as e:
+        print(e)
+        print("Outer exception : both the values should be integer")
+
+# code without exception
+# nested_level_exception(30,20,2)
+"""
+addition : 50
+division output : 10
+"""
+
+# code outer exception
+nested_level_exception(30,'Hello',2)
+"""
+unsupported operand type(s) for +: 'int' and 'str'
+Outer exception : both the values should be integer
+"""
+
+
+# inner outer exception
+nested_level_exception(30,10,0)
+"""
+addition : 40
+integer division or modulo by zero
+Inner exception :Can not divide number with zero
+"""
+
+print("_"*50)
+#####################################
+# create custom exception class and use it is program.
+
+class MyCustomException(Exception):
+    """
+        Exception raise with custom exception class
+    """
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
+
+
+def use_custom_exception():
+    for i in range(12):
+        if i> 10:
+            raise MyCustomException("More than 10 values are not allowed")
+        else:
+            print(i)
+
+
+###########################################################
+#use_custom_exception()
+def use_custom_exception_with_try_except(num1, num2):
+    try:
+        value = num1+num2
+        print(value)
+    except:
+        raise MyCustomException('Not a valid values')
+
+
+#use_custom_exception_with_try_except(10, 30)
+use_custom_exception_with_try_except(10, 'Hello')
