@@ -67,6 +67,7 @@ class Car:
         print("Car company name :", self.company_name)
 
     def show_car_price(self):   # instance method
+
         print("The car price is :", self.car_price)
 
 
