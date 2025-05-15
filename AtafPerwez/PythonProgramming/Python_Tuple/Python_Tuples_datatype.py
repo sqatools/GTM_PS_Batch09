@@ -111,7 +111,7 @@ for i in range(len(tup_b)):
         result.append(tup_b[i]+tup_c[i])
 
 print("Get result :", tuple(result))
-# (11, 7, 17, 1, 9)
+# (11, 7, 17, H1, 9)
 
 ###################### Max, min, Sum of values #################
 tup6 = (4, 6, 8, 12, 45, 78)
