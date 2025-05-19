@@ -1,0 +1,12 @@
+XPATH is the path to find an element in the DOM structor.
+
+1.  Absolute XPath: This xpath the entire dom structure to locate any element in the web page.
+                    This is not recommended to use to real time work.
+     e.g.  /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input
+
+2.  Relative XPath: relative xpath find element with the help of attributes with basic xpath method
+
+     e.g  //tagname[@attribute='vallue']
+
+     # username field on facebook :
+

@@ -6,11 +6,11 @@ Selenium Locators
     LINK_TEXT = "link text" # DONE
     PARTIAL_LINK_TEXT = "partial link text"  # DONE
     NAME = "name"  # DONE
-    TAG_NAME = "tag name"
-    CLASS_NAME = "class name"
+    TAG_NAME = "tag name" # DONE
+    CLASS_NAME = "class name"  # DONE
     CSS_SELECTOR = "css selector"
-
 """
+
 import time
 
 from selenium import webdriver
@@ -40,7 +40,7 @@ def facebook():
 
     time.sleep(10)
     # close current open browser
-    driver.close()
+    #driver.close()
 #facebook()
 
 def link_text_and_partial_linktext():
@@ -57,7 +57,27 @@ def link_text_and_partial_linktext():
 
     driver.close()
 
-link_text_and_partial_linktext()
+#link_text_and_partial_linktext()
+
+def get_element_with_tagname_classname():
+    driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
+
+    # Get element with TAG_NAME locator
+    header = driver.find_element(By.TAG_NAME, "h1")
+    print("website header :", header.text)
+
+    time.sleep(5)
+
+    # Get element with class name locator
+    elem2 = driver.find_element(By.CLASS_NAME, "post-title")
+    print(elem2.text)
+
+    driver.close()
 
 
+get_element_with_tagname_classname()
 
+# check the uniqueness of element in developer tool
+# 1. hash for id, e.g #id
+# 2. dot for class, e.g  .clasname
+# 3. double // for tagname e.g. //tagname
