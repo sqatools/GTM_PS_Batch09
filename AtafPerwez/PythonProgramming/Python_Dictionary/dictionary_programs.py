@@ -35,6 +35,7 @@ for fruit, price in fruit_price.items():
     print(fruit_name, "\t\t", fruit_price, "\t\t", fruit_no, "\t\t", fruit_bill)
     total_bill = total_bill + fruit_bill
 
+
 print("_"*40)
 print("Total bill :", total_bill)
 
@@ -50,7 +51,6 @@ employee_list = [
     {'Name': 'Jenny', 'exp': 10, 'age': 45, 'salary': 1000000},
     {'Name': 'rahul', 'exp': 15, 'age': 30, 'salary': 500000}
 ]
-
 
 
 for data in employee_list:
@@ -101,5 +101,6 @@ emp_dict = {
 
 input = 'IT_02'
 print("IT_02")
-################
+
+
 
