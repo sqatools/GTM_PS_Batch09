@@ -207,7 +207,6 @@ str1 = "Learning"
 
 result = "_".join(str1)
 print("result :", result) # L_e_a_r_n_i_n_g
-
 str_d = "Python Programming"
 result2 = "123".join(str_d)
 print(result2) # P@y@t@h@o@n@ @P@r@o@g@r@a@m@m@i@n@g

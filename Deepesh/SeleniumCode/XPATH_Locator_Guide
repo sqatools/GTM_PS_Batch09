@@ -1,0 +1,56 @@
+XPATH is the path to find an element in the DOM structor.
+
+1.  Absolute XPath: This xpath the entire dom structure to locate any element in the web page.
+                    This is not recommended to use to real time work.
+     e.g.  /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input
+
+2.  Relative XPath: relative xpath find element with the help of attributes with basic xpath method
+
+     e.g  //tagname[@attribute='value']
+
+     # username and password field on facebook :
+        -> //input[@data-testid='royal-email']
+        -> //input[@data-testid="royal-pass"]
+        -> //button[@data-testid="royal-login-button"]
+
+
+     # Basic xpath with *
+        -> //*[@data-testid='royal-email']
+        -> //*[@data-testid="royal-pass"]
+        -> //*[@data-testid="royal-login-button"]
+
+    # Indexing on multiple element :  IF we have multiple elements with same attribute or same text
+      thn we can use indexing to find unique element
+      e.g . https://www.goibibo.com/
+
+      -> (//p[text()='Enter city or airport'])[2]
+      -> (//*[text()='Hotels'])[1]
+
+
+
+############ Basic XPath Methods  ###############
+1. Text Method
+2. contains Method
+3. and or condition
+4. start-with method.
+
+1. Text Method :  //tagname[text()='text value']
+                  -> //button[text()='Log in']
+                  -> //a[text()='Create new account']
+                  -> //tagname[text()='Hotels']   # https://www.goibibo.com/
+
+
+2. contains method :  with the help contains method, we can identify the element with the help
+                      of partial attribute value or partial text value
+                      e.g. //tagname[contains(@attribute, 'value')]
+                           -> //input[contains(@data-testid, 'al-em')]   # facebook
+                           -> //a[contains(@data-testid, 'open-registration')]  # facebook
+
+
+                      e.g     //tagname[contains(text(), 'text value')]
+                           -> //button[contains(text(), 'Log')]
+                           -> //h2[contains(text(), 'Domestic')]
+
+
+
+

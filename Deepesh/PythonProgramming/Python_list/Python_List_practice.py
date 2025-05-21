@@ -175,6 +175,8 @@ val2 = list_k.pop(2)
 print("removed value :", val2) # removed value : 77
 print("list_k:", list_k) # [44, 66, 1, 4, 'a']
 
+
+
 print("_"*50)
 #######################
 # clear() method :  This method remove all the data from list, and only empty list will remain.
@@ -201,7 +203,6 @@ print("listn :", list_n) # [4, 6, 55, 11, 45]
 
 del list_n[-3]
 print("listn :", list_n) # [4, 6, 11, 45]
-
 
 print("_"*50)
 ########################

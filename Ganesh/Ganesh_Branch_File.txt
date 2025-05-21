@@ -1,6 +1,0 @@
-Testing for learning purpose
-
-Pycharm file added
-# a: variable
-# =: asigment oprator
-
