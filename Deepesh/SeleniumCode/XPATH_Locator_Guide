@@ -52,5 +52,43 @@ XPATH is the path to find an element in the DOM structor.
                            -> //h2[contains(text(), 'Domestic')]
 
 
+3. and or condition : In this method we can find the xpath with multiple attributes
+                      AND condition : both the attribute should be available
+                      e.g. //tagname[@attribute='value' and @attr2='value2']
+                      -> //input[@type='text' and @data-testid='royal-email']
+                      -> //button[text()='Log in' and @data-testid='royal-login-button']
+
+                      OR condition : Any one of the attribute should be available.
+                      e.g. //tagname[@attribute='value' or @attr2='value2']
+                           -> //button[text()='Log in' or @data-testid='royal-login-button1']
+                           -> //*[text()='Log in' or contains(@data-testid, 'royal')]
 
 
+4. start-with method: This method look for element with attribute's starting values.
+                      e.g. //tagname[starts-with(@attribute='value')]
+                      -> //input[starts-with(@data-testid, 'royal')]
+                      -> //input[starts-with(@placeholder, 'Email')]
+                      -> //button[starts-with(text(), 'Log')]
+
+
+################### Advance XPath Methods #######################
+
+1. Parent Method : In this method we will identify the parent element with the reference of
+                   child element
+                   e.g.  //child_tagname[@attr='value']//parent::parent_tagname[@attr='value']
+                         -> //label[text()='Female']//parent::span
+
+
+2. Ancestor Method : In this method we will identify the ancestor element with the reference of grand child element.
+                   e.g.  //grand_child_tagname[@attr='value']//ancestor::ancestor_tagname[@attr='value']
+                         -> //input[@value='1']//ancestor::span[1]
+                         -> //input[@value='1']//ancestor::span[@data-type='radio']//input[@value='-1']
+                         -> //input[@value='1']//ancestor::div[@id='reg_form_box']//button[text()='Sign Up']
+
+3. Following Method :
+
+4. Following-sibling Method :
+
+6. Preceding Method :
+
+7. Preceding-sibling Method. :
