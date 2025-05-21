@@ -387,3 +387,6 @@ print(result2)
 result3  = [(x, y) for x in ['add1', 'add2', 'add3'] for y in ['Item1', 'Item2']]
 print(result3)
 # [('add1', 'Item1'), ('add1', 'Item2'), ('add2', 'Item1'), ('add2', 'Item2'), ('add3', 'Item1'), ('add3', 'Item2')]
+
+
+dir(str)
