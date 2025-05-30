@@ -5,22 +5,12 @@ import time
 
 # Set up the Chrome browser
 driver = webdriver.Chrome()
+driver.get("https://automationbysqatools.blogspot.com/p/manual-testing.html")
+driver.find_element(By.ID,"oneway").click()
+driver.find_element(By.ID,"roundtrip").click()
 
-# Open Google
-driver.get("https://www.google.com")
 
-# Wait for the page to load
-time.sleep(2)
+driver.find_element(By.NAME,"fromcity").send_keys("mumbai")
+driver.find_element(By.NAME,"destcity").send_keys("benagaluru")
 
-# Find the search box and type a query
-search_box = driver.find_element(By.NAME, "q")
-search_box.send_keys("Selenium automation tutorial")
-
-# Press Enter
-search_box.send_keys(Keys.RETURN)
-
-# Wait to see results
-time.sleep(3)
-
-# Close the browser
-driver.quit()
+driver.close()
