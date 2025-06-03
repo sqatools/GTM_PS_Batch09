@@ -65,4 +65,29 @@ def context_click_operation():
     time.sleep(5)
 
 
-context_click_operation()
+#context_click_operation()
+
+def scroll_to_element():
+    driver.get("https://www.globalsqa.com/demo-site/draganddrop/")
+
+    facebook_elem = driver.find_element(By.XPATH, "//a[@class='icon_facebook']")
+    action = ActionChains(driver)
+    action.scroll_to_element(facebook_elem).perform()
+    time.sleep(10)
+    facebook_elem.click()
+
+#scroll_to_element()
+
+def scroll_to_element_values():
+    driver.get("https://www.globalsqa.com/demo-site/draganddrop/")
+    time.sleep(10)
+    facebook_elem = driver.find_element(By.XPATH, "//a[@class='icon_facebook']")
+    action = ActionChains(driver)
+    action.scroll_by_amount(100, 500).perform()
+    time.sleep(10)
+    #facebook_elem.click()
+    #time.sleep(10)
+
+scroll_to_element_values()
+
+
