@@ -1,0 +1,13 @@
+# install pytest with command
+->  pip install pytest
+
+# test file in pytest framework has to start with test_ as prefix.
+ e.g  test_flight_booking, test_smoke
+
+# create test function with test file.
+  ->  each test name has to start with test_ prefix.
+
+# command to execute the code
+  ->  open terminal in current and execute below command
+  -> python -m pytest -v .\test_basic_function.py
+
