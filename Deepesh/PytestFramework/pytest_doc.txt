@@ -11,3 +11,16 @@
   ->  open terminal in current and execute below command
   -> python -m pytest -v .\test_basic_function.py
 
+# custom marker of the test cases with pytest module
+   e.g. @pytest.mark.smoke
+
+   #  command to execute specific marker test cases
+   ->  python -m pytest -v -m "smoke" .\test_basic_function_grouping.py
+
+  #  command to execute combine markers test cases with and condition
+   ->  python -m pytest -v -m "smoke and sanity" .\test_basic_function_grouping.py
+
+  #  command to execute combine markers test cases with or condition
+   ->  python -m pytest -v -m "smoke or sanity" .\test_basic_function_grouping.py
+
+
