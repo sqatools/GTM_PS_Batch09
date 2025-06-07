@@ -1,6 +1,7 @@
 """
-pip install selenium
+pip install Selenium
 """
+
 import time
 
 from selenium import webdriver
@@ -11,11 +12,10 @@ driver.maximize_window()
 driver.implicitly_wait(10)
 driver.get("https://www.facebook.com")
 
-driver.find_element(By.NAME, "email").send_keys("user1@gmail.com")
-driver.find_element(By.NAME, "pass").send_keys("User@12345")
+driver.find_element(By.NAME, "email").send_keys("user@gmail.com")
+driver.find_element(By.NAME, "pass").send_keys("1234")
 time.sleep(3)
 driver.find_element(By.NAME, "login").click()
-
 
 time.sleep(10)
 driver.close()

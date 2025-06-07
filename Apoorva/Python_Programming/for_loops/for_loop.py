@@ -64,7 +64,13 @@ print("*"* 50)
 
 str1 = "Hi hello good morning"
 
-
 output1 = f"{str1[-1]}{ str1[1:-1]}{ str1[0]}"
 
+
 print(output1)
+
+for i in str1:
+    s = list(i)
+    s[0],s[-1]=s[-1],s[0]
+print(s)
+

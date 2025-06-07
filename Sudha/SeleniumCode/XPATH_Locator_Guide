@@ -77,7 +77,6 @@ XPATH is the path to find an element in the DOM structor.
                    child element
                    e.g.  //child_tagname[@attr='value']//parent::parent_tagname[@attr='value']
                          -> //label[text()='Female']//parent::span
-                         -> //td[text()='Delhi']//parent::tr//input[@type='checkbox']
 
 
 2. Ancestor Method : In this method we will identify the ancestor element with the reference of grand child element.
@@ -85,29 +84,11 @@ XPATH is the path to find an element in the DOM structor.
                          -> //input[@value='1']//ancestor::span[1]
                          -> //input[@value='1']//ancestor::span[@data-type='radio']//input[@value='-1']
                          -> //input[@value='1']//ancestor::div[@id='reg_form_box']//button[text()='Sign Up']
-                         -> //h3[contains(text(),'Institute of Engineering and Technology')]// ::tr//a[@data-ga-event-category="courses-fees"]/span[1]
 
-3. Following Method :  In this method we will indentify all the element are downside from reference element.
-                        e.g. //ref_tagname[@attr='value']//following::tar_tagname[@attr='value']
-                             -> //div[text()='Offers For You']//following::li[text()='Flights']
-                             -> //div[text()='Offers For You']//following::p[text()='Customer Support']
-                             -> //div[text()='Offers For You']//following::*[contains(text(),'Flights')]
-                             -> //div[text()='Offers For You']//following::a[@href='/flights/']//*[contains(text(),'Flights')]
+3. Following Method :
 
-4. Following-sibling Method  : In this method we will indentify all the elder sibling with reference younger singling element
-                                in same family three.
-                             -> //ref_tagname[@attr='value']//following-sibling::tar_tagname[@attr='value']
-                             -> //li[text()='Flights']//following-sibling::li[text()='Trains']
-                             -> //td[text()='Indore']//following-sibling::td
+4. Following-sibling Method :
 
+6. Preceding Method :
 
-6. Preceding Method :  In this method we will indentify all the element are upper side from reference element.
-                        e.g. //ref_tagname[@attr='value']//preceding::tar_tagname[@attr='value']
-                        -> //input[@id='fromcity']//preceding::h1[@align='center']
-                        -> //input[@id='fromcity']//preceding::input[@id='male']
-
-7. Preceding-sibling Method. : In this method we will indentify all the younger sibling with reference elder singling element
-                                in same family three.
-                          e.g. //ref_tagname[@attr='value']//preceding-sibling::tar_tagname[@attr='value']
-                          -> //td[text()='Indore']//preceding-sibling::td/input[@type='checkbox']
-                          -> //td[text()='Delhi']//preceding-sibling::td/input[@type='checkbox']
+7. Preceding-sibling Method. :
