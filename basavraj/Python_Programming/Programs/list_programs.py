@@ -226,3 +226,22 @@ date = datetime.datetime.now()
 
 print (date.strftime (" %Y %b %d "))
 
+#22
+#Input string
+string = "www Student ppp are qqqq learning Python vvv"
+
+#Splitting a atring
+string2 = string.split()
+
+#Creating an empty list
+list1 = []
+
+for words in string2:
+    for char in words:
+    #Checking for vowels
+        if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+            list1.append(words)
+            break
+
+#Printing output
+print(list1)
