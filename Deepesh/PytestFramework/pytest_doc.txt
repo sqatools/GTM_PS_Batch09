@@ -24,3 +24,10 @@
    ->  python -m pytest -v -m "smoke or sanity" .\test_basic_function_grouping.py
 
 
+# command to execute all the test files in specified target folder.
+  -> python -m pytest -v -s .\folder_name\
+
+# command to execute specific file from folder path
+  -> python -m pytest -v -s .\folder_name\test_file_name
+
+
