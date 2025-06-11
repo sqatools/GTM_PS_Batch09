@@ -11,7 +11,7 @@ def setup():
     print("\n---- Common func fixture completed -----")
 
 
-@pytest.fixture(scope='module', autouse=True)
+@pytest.fixture(scope='module')
 def create_user_details():
     for i in range(1, 11):
         username= f'newuser{i}'
