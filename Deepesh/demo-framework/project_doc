@@ -1,0 +1,11 @@
+###  File structure of demo-framework  ###
+
+1. Selenium Code (common selenium methods) :  selenium_base.py
+------------------- One Page files ----------------------
+2. Page class (flight page) : flight_booking_page.py
+3. locator file (Page locator) : flight_booking_locators.py
+4. Page data file (input data) : flight_booking_page_data.py
+5. Page Test File (flight booking page test case)  : test_flight_booking.py
+---------------------------------------------------------
+
+6. conftest.py ( common fixture file)

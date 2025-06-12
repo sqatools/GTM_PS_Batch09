@@ -12,3 +12,16 @@ def get_driver():
     driver.close()
 
 
+@pytest.fixture(scope="class")
+def get_driver_instance(request):
+    driver1 = webdriver.Chrome()
+    driver1.maximize_window()
+    driver1.implicitly_wait(10)
+    driver1.get("https://www.facebook.com")
+    request.cls.driver = driver1
+    yield
+    driver1.close()
+
+
+
+
