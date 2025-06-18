@@ -1,0 +1,13 @@
+###  File structure of demo-framework  ###
+
+1. Selenium Code (common selenium methods) :  selenium_base.py (base folder)
+   ->  setup inheritance between each page class and selenium_base,
+   ->  then page class can access all the methods of selenium base class.
+------------------- One Page files ----------------------
+2. Page class (flight page) : flight_booking_page.py (modules/flight_page/)
+3. locator file (Page locator) : flight_booking_locators.py (modules/flight_page/)
+4. Page data file (input data) : flight_booking_page_data.py (modules/flight_page/)
+5. Page Test File (flight booking page test case)  : test_flight_booking.py (tests/flight_booking/)
+---------------------------------------------------------
+
+6. conftest.py ( common fixture file)  (tests folder)

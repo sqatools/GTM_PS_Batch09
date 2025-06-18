@@ -1,0 +1,29 @@
+Types of CSS Selector in selenium
+1. ID : When we want to identify the element with ID CSS selector,
+        then we have to add # as prefix in the name
+        -> #email
+        -> #pass
+        -> #u_0_5_x7
+
+2. CLASS :  Identify the element with class CSS_SELECTOR, then we have to add dont as prefix before class name
+         -> .inputtext
+         -> .selected
+         -> ._42ft._4jy0._6lti._4jy6._4jy2.selected._51sy
+         -> ._6ltj
+         -> input._8esa
+
+3. Attribute:   tagname[attribute='value']
+          -> input[name='email']
+          -> input[data-testid='royal-pass']
+          -> a[data-testid='open-registration-form-button']
+
+4. Sub-string:   tagname[attribute^='prefix of attribute value']
+         -> a[data-testid^='open-registration']
+         -> input[aria-label^="First"]
+
+5. Element navigation:
+         -> div>input[aria-label^="First "]
+         -> span>label>input[value='2']
+         -> span>label._58mt>input[value='2']
+         -> div>button[name="websubmit"]
+

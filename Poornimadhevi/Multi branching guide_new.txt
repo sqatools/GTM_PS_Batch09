@@ -1,0 +1,92 @@
+# Multi branching guide
+
+1. click on branch dropdown
+2. click on view all branches
+3. only main branch should be visible
+4. click on create branch button
+5. Provide new branch name, 
+   use your name as prefix
+   e.g. ganesh_branch
+6. Branch should be created successfully.
+7. copy you branch name as save it notepad
+   deepesh_branch
+8. Go to local system and open the terminal in
+   repository folder
+
+9. pull the repo code with below command
+   -> git pull 
+   # all the branches and latest changes by
+     others will be visible on terminal UI.
+
+10. check the current branch with command
+   ->  git branch
+    # it will show main as current branch in green color
+
+11.  Switch to newly created branch with below command
+    -> git checkout branch_name
+
+12. check current active branch again
+   ->  git branch
+    # new branch should show in green color as
+     activated branch.
+
+13.  Go to local system in your repository folder and add one file with your branch name
+     e.g. deepesh_branch_file.txt
+
+14. run command to check status
+    ->  git status
+    # new file will show in red color
+
+15. run command to add file
+    ->  git add filepath (single file)
+    or
+    ->  git add . # (to add all the modified files)
+
+
+16.  initiate the commit operation
+    ->  git commit -m "adding new file"
+
+17.  push code to the server
+    ->  git push
+
+18.  Go to git server and check your changes in 
+     specific branch, all the content should be in
+     a branch not in main branch.
+
+19.  There will be create pull request button visible 
+     on git server, then on button and initiate pull
+     request.
+
+18.  Provide description of your request, add reviewers in the pull 
+    ->  click on request pull create button
+
+19.  Reviewers will receive mail to review the code.
+
+20. All the pull request will show under pull request tab.
+
+21. Reviewer has to review the pull request and provide approval
+    -> Open pull request
+    ->  click on files section
+    ->  click on review changes button.
+    ->  then provide review comment 
+    ->  select Approve radio button.
+    ->  click on submit review button.
+
+22. PR owner has to merge to the pull to main branch
+    -> Once got approval from reviewer.
+    -> Open pull request
+    -> go to conversion tab.
+    -> scroll till end.
+    ->  click on Merge pull request button.
+
+23.  All the changes from feature branch will merge to main branch
+24.  Open you repo folder and check all changes from feature branch
+     should be available in your folder in main branch.
+
+
+
+
+
+
+
+

@@ -176,7 +176,7 @@ print(n1, type(n1))
 
 
 ### List -> float ###### conversion is not possible
-print("_"*50)
+print("_"*51)
 ### List -> string ###
 l2 = [5, 7, 8, 9]
 s2 = str(l2)
@@ -401,9 +401,9 @@ print(s3, type(s3), s3[0])
 print("_"*50)
 ## bool -> list ###  conversion not possible
 """
-b3= True
+"""b3= True
 l3 = list(b3)
-print(l3, type(l3))
+print(l3, type(l3))"""
 """
 # TypeError: 'bool' object is not iterable
 

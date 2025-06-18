@@ -246,7 +246,8 @@ print("_" * 50)
 """
 
 for i in range(1, 6):  # i=1, 2, 3, 4
-    for j in range(1, i + 1):  # (1,5)
+    for j in range(1, i + 1):
+        # (1,5)
         print("*", end=" ")
 
     print()
