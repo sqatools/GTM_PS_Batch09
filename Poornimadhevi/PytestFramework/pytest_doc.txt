@@ -1,0 +1,70 @@
+# install pytest with command
+->  pip install pytest
+
+# test file in pytest framework has to start with test_ as prefix.
+ e.g  test_flight_booking, test_smoke
+
+# create test function with test file.
+  ->  each test name has to start with test_ prefix.
+
+# command to execute the code
+  ->  open terminal in current and execute below command
+  -> python -m pytest -v .\test_basic_function.py
+
+# custom marker of the test cases with pytest module
+   e.g. @pytest.mark.smoke
+
+   #  command to execute specific marker test cases
+   ->  python -m pytest -v -m "smoke" .\test_basic_function_grouping.py
+
+  #  command to execute combine markers test cases with and condition
+   ->  python -m pytest -v -m "smoke and sanity" .\test_basic_function_grouping.py
+
+  #  command to execute combine markers test cases with or condition
+   ->  python -m pytest -v -m "smoke or sanity" .\test_basic_function_grouping.py
+
+
+# command to execute all the test files in specified target folder.
+  -> python -m pytest -v -s .\folder_name\
+
+# command to execute specific file from folder path
+  -> python -m pytest -v -s .\folder_name\test_file_name
+
+
+# Generate HTML report
+  # install pytest package with command :  pip install pytest-html
+
+# command to generate html report
+  ->  python -m pytest -v .\Basic_Scripts\ .\common_test\ --html=custom_report.html
+
+
+# execute test cases parallel in the pytest
+  # install pytest package with command  :  pip install pytest-xdist
+
+ # command to execute parallel test cases
+   ->  python -m pytest -v -n 4 .\Basic_Scripts\ .\common_test\ --html=custom_report.html
+
+   -n : number of test cases parallel (each test will execute in one CPU)
+
+
+################### Pytest Class File ##############
+  # class name has to start with Test_<name>
+  ->  python -m pytest -v .\test_smoke_class.p
+     test_smoke_class.py::TestSmoke::test_addition PASSED                                                                                                           [ 20%]
+     test_smoke_class.py::TestSmoke::test_multiplication PASSED                                                                                                     [ 40%]
+     test_smoke_class.py::TestSmoke::test_division FAILED                                                                                                           [ 60%]
+     test_smoke_class.py::TestSmoke::test_subtraction PASSED                                                                                                        [ 80%]
+     test_smoke_class.py::TestSmoke::test_compare_values FAILED
+
+  # execute specific test cases from test file
+   # command 1 :
+     ->  python -m pytest -v .\test_smoke_class.py::TestSmoke::test_addition
+
+  # command 2 :
+     ->  python -m pytest -v -k "test_addition" .\test_smoke_class.py
+     -k : -k stand for test function name.
+
+
+  # command to show print statement value in console output
+    -> python -m pytest -v -s .\test_smoke_class.py
+    -s : show print output in the console

@@ -1,0 +1,113 @@
+XPATH is the path to find an element in the DOM structor.
+
+1.  Absolute XPath: This xpath the entire dom structure to locate any element in the web page.
+                    This is not recommended to use to real time work.
+     e.g.  /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input
+
+2.  Relative XPath: relative xpath find element with the help of attributes with basic xpath method
+
+     e.g  //tagname[@attribute='value']
+
+     # username and password field on facebook :
+        -> //input[@data-testid='royal-email']
+        -> //input[@data-testid="royal-pass"]
+        -> //button[@data-testid="royal-login-button"]
+
+
+     # Basic xpath with *
+        -> //*[@data-testid='royal-email']
+        -> //*[@data-testid="royal-pass"]
+        -> //*[@data-testid="royal-login-button"]
+
+    # Indexing on multiple element :  IF we have multiple elements with same attribute or same text
+      thn we can use indexing to find unique element
+      e.g . https://www.goibibo.com/
+
+      -> (//p[text()='Enter city or airport'])[2]
+      -> (//*[text()='Hotels'])[1]
+
+
+
+############ Basic XPath Methods  ###############
+1. Text Method
+2. contains Method
+3. and or condition
+4. start-with method.
+
+1. Text Method :  //tagname[text()='text value']
+                  -> //button[text()='Log in']
+                  -> //a[text()='Create new account']
+                  -> //tagname[text()='Hotels']   # https://www.goibibo.com/
+
+
+2. contains method :  with the help contains method, we can identify the element with the help
+                      of partial attribute value or partial text value
+                      e.g. //tagname[contains(@attribute, 'value')]
+                           -> //input[contains(@data-testid, 'al-em')]   # facebook
+                           -> //a[contains(@data-testid, 'open-registration')]  # facebook
+
+
+                      e.g     //tagname[contains(text(), 'text value')]
+                           -> //button[contains(text(), 'Log')]
+                           -> //h2[contains(text(), 'Domestic')]
+
+
+3. and or condition : In this method we can find the xpath with multiple attributes
+                      AND condition : both the attribute should be available
+                      e.g. //tagname[@attribute='value' and @attr2='value2']
+                      -> //input[@type='text' and @data-testid='royal-email']
+                      -> //button[text()='Log in' and @data-testid='royal-login-button']
+
+                      OR condition : Any one of the attribute should be available.
+                      e.g. //tagname[@attribute='value' or @attr2='value2']
+                           -> //button[text()='Log in' or @data-testid='royal-login-button1']
+                           -> //*[text()='Log in' or contains(@data-testid, 'royal')]
+
+
+4. start-with method: This method look for element with attribute's starting values.
+                      e.g. //tagname[starts-with(@attribute='value')]
+                      -> //input[starts-with(@data-testid, 'royal')]
+                      -> //input[starts-with(@placeholder, 'Email')]
+                      -> //button[starts-with(text(), 'Log')]
+
+
+################### Advance XPath Methods #######################
+
+1. Parent Method : In this method we will identify the parent element with the reference of
+                   child element
+                   e.g.  //child_tagname[@attr='value']//parent::parent_tagname[@attr='value']
+                         -> //label[text()='Female']//parent::span
+                         -> //td[text()='Delhi']//parent::tr//input[@type='checkbox']
+
+
+2. Ancestor Method : In this method we will identify the ancestor element with the reference of grand child element.
+                   e.g.  //grand_child_tagname[@attr='value']//ancestor::ancestor_tagname[@attr='value']
+                         -> //input[@value='1']//ancestor::span[1]
+                         -> //input[@value='1']//ancestor::span[@data-type='radio']//input[@value='-1']
+                         -> //input[@value='1']//ancestor::div[@id='reg_form_box']//button[text()='Sign Up']
+                         -> //h3[contains(text(),'Institute of Engineering and Technology')]// ::tr//a[@data-ga-event-category="courses-fees"]/span[1]
+
+3. Following Method :  In this method we will indentify all the element are downside from reference element.
+                        e.g. //ref_tagname[@attr='value']//following::tar_tagname[@attr='value']
+                             -> //div[text()='Offers For You']//following::li[text()='Flights']
+                             -> //div[text()='Offers For You']//following::p[text()='Customer Support']
+                             -> //div[text()='Offers For You']//following::*[contains(text(),'Flights')]
+                             -> //div[text()='Offers For You']//following::a[@href='/flights/']//*[contains(text(),'Flights')]
+
+4. Following-sibling Method  : In this method we will indentify all the elder sibling with reference younger singling element
+                                in same family three.
+                             -> //ref_tagname[@attr='value']//following-sibling::tar_tagname[@attr='value']
+                             -> //li[text()='Flights']//following-sibling::li[text()='Trains']
+                             -> //td[text()='Indore']//following-sibling::td
+
+
+6. Preceding Method :  In this method we will indentify all the element are upper side from reference element.
+                        e.g. //ref_tagname[@attr='value']//preceding::tar_tagname[@attr='value']
+                        -> //input[@id='fromcity']//preceding::h1[@align='center']
+                        -> //input[@id='fromcity']//preceding::input[@id='male']
+
+7. Preceding-sibling Method. : In this method we will indentify all the younger sibling with reference elder singling element
+                                in same family three.
+                          e.g. //ref_tagname[@attr='value']//preceding-sibling::tar_tagname[@attr='value']
+                          -> //td[text()='Indore']//preceding-sibling::td/input[@type='checkbox']
+                          -> //td[text()='Delhi']//preceding-sibling::td/input[@type='checkbox']
