@@ -12,7 +12,7 @@ class TestBusBooking():
         self.bus = BusBooking(self.driver)
 
     @pytest.mark.smoke
-    def test_navigate_to__bus(self, request):
+    def test_navigate_to_bus(self, request):
         self.bus.log.info(f"TEST CASE: {request.node.name}")
         self.bus.goto_bus_booking_page()
 
