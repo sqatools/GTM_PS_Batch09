@@ -35,7 +35,7 @@ class BusBooking(SeleniumBase):
 
     def select_bus(self, bus_name):
         self.log.info("Selecting bus to book the seat")
-        select_bus_dynmc = (By.XPATH, f"//p[text()='{bus_name}']//parent::div//parent::div//span[text()='SELECT SEAT']")
+        select_bus_dynmc = (By.XPATH, f"(//p[text()='{bus_name}']//parent::div//parent::div//span[text()='SELECT SEAT'])[1]")
         self.click_element(select_bus_dynmc)
 
     def select_boarding_point(self, boarding_loc):
@@ -63,9 +63,9 @@ class BusBooking(SeleniumBase):
                                 pincode, state_name, flight_type, gender='male'):
         self.enter_text(name_field_loc, name)
         self.enter_text(age_field_loc, age)
-        if gender == 'male':
+        if gender.lower() == 'male':
             self.click_element(male_gender)
-        elif gender == 'female':
+        elif gender.lower() == 'female':
             self.click_element(female_gender)
         self.enter_text(email_field, email)
         self.enter_text(phone_number_field, phone)
