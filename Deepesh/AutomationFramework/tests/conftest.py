@@ -2,10 +2,24 @@ import pytest
 import os
 from datetime import datetime
 from selenium import  webdriver
+from base.webdriver_factory import WebdriverFactory
+
+def pytest_addoption(parser):
+    parser.addoption("--browser", action='store', default='chrome', help='browser to execute automation code')
+    parser.addoption("--headless", action='store', default=False, help='browser to execute automation code')
+
 
 @pytest.fixture(scope="class")
-def get_driver(request):
-    driver = webdriver.Chrome()
+def get_driver(request, pytestconfig):
+    browser = pytestconfig.getoption("browser")
+    headless = pytestconfig.getoption("headless")
+    if browser and headless:
+        wf = WebdriverFactory(browser, headless)
+    elif browser:
+        wf = WebdriverFactory(browser, headless=False)
+    else:
+        wf = WebdriverFactory('chrome', headless=False)
+    driver = wf.get_driver_instance()
     driver.maximize_window()
     driver.get("https://www.goibibo.com/")
     request.cls.driver = driver
