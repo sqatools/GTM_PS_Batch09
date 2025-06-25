@@ -1,0 +1,22 @@
+API (Application Programming Interface)
+
+
+Presentation Layer
+Business Layer (API works with Business Payer)
+Database Layer
+
+API works on HTTP protocol.
+HTTP Methods:
+
+->  GET (Get existing information from data base)
+->  POST (Create new entry)
+->  PUT (Create new entry as well and update existing entry)
+->  PATCH  (Update specific field  of information)
+->  DELETE (Delete data from database)
+
+Response status code:
+100 - 199 : (Information status code)
+200 - 299 : (Success operations)
+300 - 399 : (Re-directional error)
+400 - 499 :  (Client Error)
+500 - 599 :  (Server Error)
