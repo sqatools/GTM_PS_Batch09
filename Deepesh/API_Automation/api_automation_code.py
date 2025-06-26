@@ -1,4 +1,6 @@
 # pip install request
+import json
+
 from requests import request
 from pprint import pprint
 
@@ -47,7 +49,7 @@ def get_one_object_details():
     pprint(response.json())
     pprint(response.status_code)
 
-get_one_object_details()
+#get_one_object_details()
 """
 {'data': {'CPU model': 'Intel Core i9',
           'Hard disk size': '1 TB',
@@ -56,6 +58,111 @@ get_one_object_details()
  'id': '7',
  'name': 'Apple MacBook Pro 16'}
 200
+
+
+"""
+
+
+def add_object_data():
+    url = "https://api.restful-api.dev/objects"
+    payload = json.dumps({
+           "name": "Apple MacBook Pro 16",
+           "data": {
+              "year": 2019,
+              "price": 1849.99,
+              "CPU model": "Intel Core i9",
+              "Hard disk size": "1 TB"
+                }
+               })
+
+
+    headers = {
+           'Content-Type': 'application/json'
+       }
+
+    response = request("POST", url=url, headers=headers, data=payload)
+    pprint(response.json())
+    print(response.status_code)
+
+#add_object_data()
+
+"""
+{'createdAt': '2025-06-26T14:54:33.712+00:00',
+ 'data': {'CPU model': 'Intel Core i9',
+          'Hard disk size': '1 TB',
+          'price': 1849.99,
+          'year': 2019},
+ 'id': 'ff8081819782e69e0197acbbbaf0784d',
+ 'name': 'Apple MacBook Pro 16'}
+200
+"""
+
+
+def update_object_data(id):
+    url = f"https://api.restful-api.dev/objects/{id}"
+    payload = json.dumps({
+           "name": "Apple MacBook Pro 16",
+           "data": {
+              "year": 2025,
+              "price":5000,
+              "CPU model": "Intel Core i9",
+              "Hard disk size": "4 TB"
+                }
+               })
+
+
+    headers = {
+           'Content-Type': 'application/json'
+       }
+
+    response = request("PUT", url=url, headers=headers, data=payload)
+    pprint(response.json())
+    print(response.status_code)
+
+#update_object_data("ff8081819782e69e0197acbbbaf0784d")
+
+
+def patch_object_data(id):
+    url = f"https://api.restful-api.dev/objects/{id}"
+    payload = json.dumps({
+           "name": "Apple MacBook Pro 150",
+               })
+
+
+    headers = {
+           'Content-Type': 'application/json'
+       }
+
+    response = request("PATCH", url=url, headers=headers, data=payload)
+    pprint(response.json())
+    print(response.status_code)
+
+patch_object_data("ff8081819782e69e0197acbbbaf0784d")
+
+"""
+{'data': {'CPU model': 'Intel Core i9',
+          'Hard disk size': '4 TB',
+          'price': 5000,
+          'year': 2025},
+ 'id': 'ff8081819782e69e0197acbbbaf0784d',
+ 'name': 'Apple MacBook Pro 150',
+ 'updatedAt': '2025-06-26T15:05:06.057+00:00'}
+200
+
+"""
+
+def delete_object_details(id):
+    url = f"https://api.restful-api.dev/objects/{id}"
+    headers = {}
+    payload = {}
+    response = request("DELETE", url, headers=headers, data=payload)
+    pprint(response.json())
+    pprint(response.status_code)
+
+#delete_object_details("ff8081819782e69e0197acbbbaf0784d")
+"""
+{'message': 'Object with id = ff8081819782e69e0197acbbbaf0784d has been '
+            'deleted.'}
 
 
 """
