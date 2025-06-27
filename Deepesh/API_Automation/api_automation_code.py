@@ -1,4 +1,6 @@
-# pip install request
+# install module with below command
+# pip install requests
+
 import json
 
 from requests import request
@@ -137,7 +139,7 @@ def patch_object_data(id):
     pprint(response.json())
     print(response.status_code)
 
-patch_object_data("ff8081819782e69e0197acbbbaf0784d")
+#patch_object_data("ff8081819782e69e0197acbbbaf0784d")
 
 """
 {'data': {'CPU model': 'Intel Core i9',
@@ -166,3 +168,15 @@ def delete_object_details(id):
 
 
 """
+
+def get_users_detail_with_token():
+    url = "https://gorest.co.in/public/v2/users"
+    access_token = "2fcabc17443f5e15070811c38f35b257838683a00fa76ef22471ebd4001ab7b5"
+    headers = {'Authorization' : f"{access_token}"}
+    response = request("GET", url, headers=headers)
+    print(response.json())
+    print(response.status_code)
+
+get_users_detail_with_token()
+
+
