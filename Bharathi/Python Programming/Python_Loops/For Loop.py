@@ -4,7 +4,7 @@ for <condition>:
     code
 
 """
-# range(start, end, step difference)
+# range(start, end, step difference adding to commit to select)
 # range(1, 10, 1)
 # in range output, will consider the start and exclude the end value
 
