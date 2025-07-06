@@ -64,3 +64,101 @@ print(x,id(z))#100 140717193504280
 #3)there is no limit for variable name lenghth (abc_xuz_hello =40)
 #4) cannot contains special charchter in variable name except underscore (var% =700 invalid)
 #5)variable name is  casesenitive (a, A) both are different
+
+
+
+#math operators on variables
+
+
+# + :plus
+# - :minus
+# * :multiplication
+# / and // :division
+# == :equal to
+# != : not equal to
+# **: power operator
+# %: reminder operator
+
+#addition
+
+num1=40
+num2=50
+num3= num1+num2
+
+print(num3)   #90
+print("addition of num1, num2:", num1+num2)  #90
+
+#multiplication
+
+var1=num1 *num2
+print(var1)   #2000
+
+#subtraction
+
+print("subtraction", 500-num1)  #460
+
+#divsion
+
+v1=50
+v2=3
+
+print('divsion with single /:', v1/v2)   #divsion with single /: 16.666666666666668
+print('divsion with double //:', v1//v2)   #divsion with double //: 16
+
+
+#get square and cube of any number
+
+
+n1=5
+print(n1**2) #25
+print(n1**3)  #125
+
+
+#reminder value
+
+v2=20
+v3=3
+
+print("remainder value :", v2%v3) #2
+
+#equal operator/ not equal)
+
+p1=40
+p2=50
+p3=40
+
+print(p1==p2) #false
+print(p1 != p2)#true
+
+print(p1==p3)   #true
+
+
+
+##################################################
+# (a+b)^2 = a^2+b^2 +2ab
+
+#(a-b)^2 = a^2+b^2-2ab
+
+
+a=4
+b=7
+
+lhs=(a-b)**2
+print(lhs)  #9
+
+rhs=a**2+b**2-2*a*b
+print(rhs)  #9
+
+
+##########################################################
+#calculate simple interest
+p=2000
+r=8
+t=5
+#p=principle amount
+#r= rate of interest
+#t=time  in a year
+
+a=(p*t*r)/100
+
+print ("simple interest:",a)#8000.0
