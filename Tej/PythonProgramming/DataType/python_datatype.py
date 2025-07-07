@@ -237,6 +237,23 @@ set2.add(100)
 print(set2)  #{3, 100, 5, 'a', 7, 'b'}
 
 
+print("********************************************************************************************")
+#boolean
+
+#properties of boolean
+    # -->boolean is immutable data type
+    # -->boolean accepts only 2 values true or false
+    # -->generally booleans value will the output of specific conditions
+
+
+n1=10
+n2=40
+n3=10
+
+print(n1==n2) #False
+print(n2==n3)  #False
+print(n1==n3)#True
+
 
 
 
